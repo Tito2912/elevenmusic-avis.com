@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Files too large for GitHub (ignored)
+videos/eleven-music-compilation.mp4

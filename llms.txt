@@ -1,0 +1,22 @@
+# ElevenMusic Avis
+
+> Guide pour les IA : contenu principal en francais, sitemap disponible, et certaines IA d'indexation sont restreintes.
+
+Ce site presente des avis et contenus autour d'Eleven Music. Utilisez les liens ci-dessous pour acceder aux pages cles ou au plan complet du site.
+
+## Acces IA et plan
+
+- [robots.txt](https://elevenmusic-avis.com/robots.txt) : GPTBot, ChatGPT-User, Google-Extended, CCBot, Claude-Web et PerplexityBot sont interdits ; autres agents autorises.
+- [Sitemap](https://elevenmusic-avis.com/sitemap.xml) : plan complet du site.
+
+## Contenus principaux
+
+- [Accueil](https://elevenmusic-avis.com/)
+- [Blog](https://elevenmusic-avis.com/blog.html)
+- [Mentions legales](https://elevenmusic-avis.com/mentions-legales.html)
+- [Politique de confidentialite](https://elevenmusic-avis.com/politique-de-confidentialite.html)
+
+## Optional
+
+- [Audios](https://elevenmusic-avis.com/audios/)
+- [Videos](https://elevenmusic-avis.com/videos/)

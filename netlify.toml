@@ -1,0 +1,127 @@
+[build]
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_VERSION  = "9"
+
+# =========================
+# Sécurité & SEO par défaut
+# =========================
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Sécurité HTTP
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    X-Frame-Options           = "DENY"
+    X-XSS-Protection          = "1; mode=block"
+    X-Content-Type-Options    = "nosniff"
+    Referrer-Policy           = "strict-origin-when-cross-origin"
+    Permissions-Policy        = "geolocation=(), microphone=(), camera=(), browsing-topics=()"
+    Cross-Origin-Opener-Policy  = "same-origin"
+    Cross-Origin-Resource-Policy = "same-origin"
+    # CSP compatible avec ton usage (inline styles/scripts limités + GA/Tag Manager)
+    Content-Security-Policy = '''
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com;
+      connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com;
+      img-src 'self' data: https:;
+      style-src 'self' 'unsafe-inline' https:;
+      font-src 'self' data: https:;
+      media-src 'self' https:;
+      frame-ancestors 'none';
+      base-uri 'self';
+      form-action 'self';
+      upgrade-insecure-requests;
+    '''
+    # Langue par défaut (FR) — surchargée plus bas pour /en/*
+    Content-Language = "fr"
+
+# Déclare explicitement la langue des pages EN
+[[headers]]
+  for = "/en/*"
+  [headers.values]
+    Content-Language = "en"
+
+# ==================================
+# X-Robots-Tag pour pages légales/RGPD
+# ==================================
+[[headers]]
+  for = "/mentions-legales*"
+  [headers.values]
+    X-Robots-Tag = "index, follow"
+
+[[headers]]
+  for = "/politique-de-confidentialite*"
+  [headers.values]
+    X-Robots-Tag = "index, follow"
+
+[[headers]]
+  for = "/en/legal-notice*"
+  [headers.values]
+    X-Robots-Tag = "index, follow"
+
+[[headers]]
+  for = "/en/privacy-policy*"
+  [headers.values]
+    X-Robots-Tag = "index, follow"
+
+# =========================
+# Caching (Core Web Vitals)
+# =========================
+# HTML : court (évite le contenu périmé)
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+
+# Assets versionnés : cache long
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.woff"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.mp4"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.mp3"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

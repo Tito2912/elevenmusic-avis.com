@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Your first ElevenMusic AI track: step-by-step guide</title>
+  <meta name="description" content="Step-by-step tutorial to generate your first AI track with ElevenMusic: prompts, pro tips and concrete examples.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Hreflang + Canonical -->
+  <link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/blog-1">
+  <link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/blog-1">
+  <link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/blog-1">
+  <link rel="canonical" href="https://elevenmusic-avis.com/en/blog-1">
+
+  <!-- Icons / CSS -->
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="/style.min.css">
+
+  <!-- Performance Hints -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <!-- Preload LCP candidate (hero image) -->
+  <link rel="preload" as="image" href="/images/blog-1-hero.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Your first ElevenMusic AI track: step-by-step guide">
+  <meta property="og:description" content="Step-by-step tutorial to generate your first AI track with ElevenMusic: prompts, pro tips and concrete examples.">
+  <meta property="og:image" content="https://elevenmusic-avis.com/images/og-elevenmusic.jpg">
+  <meta property="og:url" content="https://elevenmusic-avis.com/en/blog-1">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Your first ElevenMusic AI track: step-by-step guide">
+  <meta name="twitter:description" content="Step-by-step tutorial to generate your first AI track with ElevenMusic: prompts, pro tips and concrete examples.">
+  <meta name="twitter:image" content="https://elevenmusic-avis.com/images/og-elevenmusic.jpg">
+
+  <!-- Consent Mode v2: default (no analytics before consent) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied',
+      'functionality_storage': 'granted',
+      'security_storage': 'granted'
+    });
+  </script>
+
+  <!-- JSON-LD Article (kept & valid) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Create Your First Music with ElevenMusic AI (Complete Guide)",
+    "description": "Step-by-step tutorial to generate your first AI track with ElevenMusic: prompts, pro tips and concrete examples.",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://elevenmusic-avis.com/images/og-elevenmusic.jpg",
+      "width": "1200",
+      "height": "630"
+    },
+    "datePublished": "2025-03-15T08:00:00+00:00",
+    "dateModified": "2025-03-15T08:00:00+00:00",
+    "author": { "@type": "Organization", "name": "ElevenMusic-avis.com" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ElevenMusic-avis.com",
+      "logo": { "@type": "ImageObject", "url": "https://elevenmusic-avis.com/images/logo.png" }
+    },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://elevenmusic-avis.com/en/blog-1" },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- Google Translate (as in source) -->
+  <meta name="google" content="notranslate">
+</head>
+<body class="hero-merged">
+  <!-- Cookie banner -->
+  <div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie banner">
+    <span>This site uses cookies to improve your experience and measure audience.
+      <a href="/en/legal-notice" target="_blank" rel="noopener">Legal Notice</a> |
+      <a href="/en/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+    </span>
+    <div class="cookie-actions">
+      <button id="cookie-refuse" type="button">Decline</button>
+      <button id="cookie-accept" type="button">I Accept</button>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-flex">
+      <a href="/en/" class="logo">
+        <img src="../images/logo.png" alt="ElevenMusic" width="180" height="40" decoding="async">
+      </a>
+      <nav class="header-nav" id="mainNav" aria-label="Primary navigation">
+        <a href="/en/#features">Features</a>
+        <a href="/en/#prompts">Prompts</a>
+        <a href="/en/blog">Blog</a>
+        <a href="/en/#newsletter" class="newsletter-btn">Newsletter</a>
+        <select class="lang-select" aria-label="Language selector" onchange="if(this.value==='fr'){location.href='/blog-1';}else{location.href='/en/blog-1';}">
+          <option value="en" selected>EN</option>
+          <option value="fr">FR</option>
+        </select>
+      </nav>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">&#9776;</button>
+    </div>
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <button class="close-mobile-nav" id="closeMobileNav" aria-label="Close menu">×</button>
+      <a href="/en/#features">Features</a>
+      <a href="/en/#prompts">Prompts</a>
+      <a href="/en/blog">Blog</a>
+      <a href="/en/#newsletter" class="newsletter-btn">Newsletter</a>
+      <select class="lang-select" aria-label="Language selector (mobile)" onchange="if(this.value==='fr'){location.href='/blog-1';}else{location.href='/en/blog-1';}">
+        <option value="en" selected>EN</option>
+        <option value="fr">FR</option>
+      </select>
+    </nav>
+  </header>
+
+  <main class="blog-article">
+    <article class="container">
+      <div class="blog-header">
+        <div class="blog-badge">Tutorial</div>
+        <h1>Create Your First Music with ElevenMusic AI (Complete Guide)</h1>
+        <p class="blog-meta">Published March 15, 2025 • Reading time: 7 min</p>
+      </div>
+
+      <div class="blog-content">
+        <figure class="blog-hero">
+          <img
+            src="../images/blog-1-hero.png"
+            alt="ElevenMusic interface with AI music being generated"
+            width="1200" height="630"
+            fetchpriority="high"
+            decoding="async">
+          <figcaption>ElevenMusic's intuitive interface for creating AI music</figcaption>
+        </figure>
+
+        <p>ElevenMusic by ElevenLabs revolutionizes music creation by allowing anyone to generate original tracks in seconds. This step-by-step guide will show you how to create your first composition, even without musical knowledge.</p>
+
+        <h2>Step 1: Access ElevenMusic</h2>
+        <p>Go to <a href="https://try.elevenlabs.io/q4qifzaxhkwg" target="_blank" rel="noopener sponsored">the official ElevenMusic website</a> and log in (or create a free account). The free version already allows full testing.</p>
+
+        <h2>Step 2: Understand the Interface</h2>
+        <p>The studio consists of 3 main sections:</p>
+        <ul>
+          <li><strong>Music prompt</strong>: Describe your music</li>
+          <li><strong>Advanced settings</strong>: Style, BPM, instruments</li>
+          <li><strong>Preview</strong>: Listen and adjust</li>
+        </ul>
+
+        <div class="blog-tip">
+          <strong>Pro tip</strong>: Start with simple prompts like "energetic pop music" before experimenting with complex descriptions.
+        </div>
+
+        <h2>Step 3: Your First Prompt</h2>
+        <p>Try this prompt to start:</p>
+        <div class="code-block">
+          <code>"An energetic electro pop music with bright synths and catchy melody, tempo 120 BPM, no lyrics"</code>
+          <button class="copy-code">Copy</button>
+        </div>
+
+        <h2>Step 4: Advanced Customization</h2>
+        <p>Explore the options:</p>
+        <table class="blog-table">
+          <tr>
+            <th>Parameter</th>
+            <th>Recommended values</th>
+          </tr>
+          <tr>
+            <td>Duration</td>
+            <td>30s to test, 2-3 min for a complete track</td>
+          </tr>
+          <tr>
+            <td>Style</td>
+            <td>Pop, Electro, Cinematic, Lo-fi...</td>
+          </tr>
+          <tr>
+            <td>Instruments</td>
+            <td>Synth, Piano, Guitar, Drums...</td>
+          </tr>
+        </table>
+
+        <h2>Step 5: Generation and Export</h2>
+        <p>Click "Generate" (count 15-45 seconds). Once satisfied:</p>
+        <ol>
+          <li>Download the .mp3 or .wav file</li>
+          <li>Share the link directly</li>
+          <li>Integrate into your video projects</li>
+        </ol>
+
+        <div class="blog-case">
+          <h3>Practical case: Music for YouTube</h3>
+          <p>For a powerful YouTube intro:</p>
+          <code>"Short dynamic intro with powerful beats and futuristic sound effects, 10 seconds, cyberpunk style"</code>
+          <p>Instant result, royalty-free for your channel.</p>
+        </div>
+
+        <h2>Creation FAQ</h2>
+        <div class="blog-faq">
+          <div class="faq-item"><button>Can I generate multiple versions?</button>
+            <div class="faq-content">Yes, each generation creates a unique variation. Try with "Variation 1", "Slower version" etc.</div>
+          </div>
+          <div class="faq-item"><button>How to get a more professional result?</button>
+            <div class="faq-content">Specify instruments ("Rhodes electric piano"), atmosphere ("rainy urban night") and references ("Daft Punk style").</div>
+          </div>
+        </div>
+
+        <div class="blog-cta">
+          <p>Ready to create? <a href="https://try.elevenlabs.io/q4qifzaxhkwg" class="cta-main" target="_blank" rel="noopener sponsored">Try ElevenMusic Free →</a></p>
+        </div>
+
+        <div class="blog-case" style="margin-top:2em;">
+          <h3>Keep exploring ElevenMusic</h3>
+          <ul class="related-list">
+            <li><a href="/en/blog-2">Best ElevenMusic prompts to get unique songs</a></li>
+            <li><a href="/en/blog">All ElevenMusic guides (blog hub)</a></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-flex">
+      <div style="display:flex;align-items:center;gap:1em;">
+        <img src="../images/logo.png" alt="ElevenMusic-avis" class="footer-logo" width="140" height="32" loading="lazy" decoding="async">
+        <svg width="29" height="29" viewBox="0 0 29 29" style="filter:drop-shadow(0 0 8px #48bbff88);">
+          <circle cx="14.5" cy="14.5" r="14.5" fill="#48bbff"/>
+          <text x="50%" y="60%" text-anchor="middle" font-size="16" fill="#fff" font-family="Arial" dy=".3em">🎵</text>
+        </svg>
+      </div>
+      <div>
+        <p>Independent review & guide site – ElevenMusic-avis.com is not ElevenLabs Inc.</p>
+        <p class="copyright">© 2025 ElevenMusic-avis.com – All rights reserved</p>
+      </div>
+      <div class="footer-links">
+        <a href="/en/blog">ElevenMusic Blog</a>
+        <a href="/en/blog-1">Starter guide</a>
+        <a href="/en/blog-2">AI prompts</a>
+        <a href="/en/legal-notice">Legal Notice</a>
+        <a href="/en/privacy-policy">Privacy Policy</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="/main.min.js" defer></script>
+
+  <!-- Article-specific script (kept) -->
+  <script>
+    document.querySelectorAll('.copy-code').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const code = btn.previousElementSibling.textContent;
+        navigator.clipboard.writeText(code);
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy', 2000);
+      });
+    });
+  </script>
+
+  <!-- Consent handling: load GA4 only after explicit consent -->
+  <script>
+    (function() {
+      const banner = document.getElementById('cookie-banner');
+      const btnAccept = document.getElementById('cookie-accept');
+      const btnRefuse = document.getElementById('cookie-refuse');
+
+      function hideBanner(){ if (banner) banner.style.display = 'none'; }
+
+      function loadGA(){
+        if (document.getElementById('ga4-lib')) return;
+        const s = document.createElement('script');
+        s.async = true; s.id = 'ga4-lib';
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-FWXK1PDKDJ';
+        document.head.appendChild(s);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = window.gtag || gtag;
+
+        gtag('js', new Date());
+        // Update consent (analytics allowed)
+        gtag('consent', 'update', {
+          'analytics_storage': 'granted',
+          'functionality_storage': 'granted',
+          'security_storage': 'granted'
+        });
+        gtag('config', 'G-FWXK1PDKDJ', { 'anonymize_ip': true, 'allow_google_signals': false });
+      }
+
+      // Existing choice?
+      const saved = localStorage.getItem('cookie-consent'); // 'accepted' | 'refused'
+      if (saved === 'accepted') { loadGA(); hideBanner(); }
+      else if (saved === 'refused') { hideBanner(); }
+
+      if (btnAccept) btnAccept.addEventListener('click', function(){
+        localStorage.setItem('cookie-consent','accepted');
+        loadGA(); hideBanner();
+      });
+      if (btnRefuse) btnRefuse.addEventListener('click', function(){
+        localStorage.setItem('cookie-consent','refused');
+        hideBanner();
+      });
+    })();
+  </script>
+</body>
+</html>

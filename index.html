@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>ElevenMusic avis : test IA, guide et affiliation ElevenLabs</title>
+  <meta name="description" content="Découvre ElevenMusic by ElevenLabs : test, avis et prompts pour générer de la musique IA, plus la suite Image & Video (Beta) pour créer images et vidéos.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Hreflang + Canonical -->
+  <link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/">
+  <link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/">
+  <link rel="canonical" href="https://elevenmusic-avis.com/">
+
+  <!-- Icons / CSS -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/png">
+  <link rel="stylesheet" href="style.min.css">
+
+  <!-- Performance Hints -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <!-- Si l'image poster du hero est utilisée comme LCP, on la précharge -->
+  <link rel="preload" as="image" href="/images/hero-poster.jpg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ElevenMusic avis : test IA, guide et affiliation">
+  <meta property="og:description" content="Découvre ElevenMusic IA et la suite Image & Video (Beta) ElevenLabs : test, avis, prompts et affiliation.">
+  <meta property="og:image" content="https://elevenmusic-avis.com/images/og-elevenmusic.jpg">
+  <meta property="og:url" content="https://elevenmusic-avis.com/">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ElevenMusic avis : test IA, guide et affiliation">
+  <meta name="twitter:description" content="Découvre ElevenMusic IA et la nouvelle génération image/vidéo ElevenLabs : test, prompts et affiliation.">
+  <meta name="twitter:image" content="https://elevenmusic-avis.com/images/og-elevenmusic.jpg">
+
+  <!-- Consent Mode v2 : défaut (pas de GA avant consentement) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    // Consent par défaut : analytics et ads refusés, stockage fonctionnel/sécurité autorisé
+    gtag('consent', 'default', {
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied',
+      'functionality_storage': 'granted',
+      'security_storage': 'granted'
+    });
+  </script>
+
+  <!-- JSON-LD WebPage (existant) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "ElevenMusic avis : test complet, guide et affiliation",
+    "description": "Découvre ElevenMusic by ElevenLabs : test complet, avis, prompts et tutoriel pour générer de la musique IA, plus Image & Video (Beta) pour créer visuels et clips.",
+    "url": "https://elevenmusic-avis.com/",
+    "inLanguage": "fr",
+    "author": {
+      "@type": "Organization",
+      "name": "ElevenMusic-avis.com"
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://elevenmusic-avis.com/images/og-elevenmusic.jpg",
+      "width": "1200",
+      "height": "630"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD Organization + WebSite (ajout) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"ElevenMusic-avis.com",
+    "url":"https://elevenmusic-avis.com/",
+    "logo":"https://elevenmusic-avis.com/images/logo.png",
+    "sameAs":[]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "url":"https://elevenmusic-avis.com/",
+    "name":"ElevenMusic-avis.com",
+    "inLanguage":"fr"
+  }
+  </script>
+</head>
+<body class="hero-merged">
+  <!-- Bannière cookies -->
+  <div id="cookie-banner" class="cookie-banner" role="region" aria-label="Bannière cookies">
+    <span>Ce site utilise des cookies pour améliorer votre expérience et mesurer l'audience. <a href="/mentions-legales" target="_blank" rel="noopener">Mentions légales</a> | <a href="/politique-de-confidentialite" target="_blank" rel="noopener">Politique de confidentialité</a></span>
+    <div class="cookie-actions">
+      <button id="cookie-refuse" type="button">Refuser</button>
+      <button id="cookie-accept" type="button">J'accepte</button>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-flex">
+      <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu">☰</button>
+      <a href="/" class="logo">
+        <img src="images/logo.png" alt="ElevenMusic" width="180" height="40" fetchpriority="high" decoding="async">
+      </a>
+      <select class="lang-select header-lang" aria-label="Sélecteur de langue rapide" onchange="if(this.value==='fr'){location.href='/';}else{location.href='/en/';}">
+        <option value="fr" selected>FR</option>
+        <option value="en">EN</option>
+      </select>
+      <nav class="header-nav" id="mainNav" aria-label="Navigation principale">
+        <a href="#features">Fonctionnalités</a>
+        <a href="#prompts">Prompts</a>
+        <a href="/blog">Blog</a>
+        <a href="#newsletter" class="newsletter-btn">Newsletter</a>
+        <select class="lang-select" aria-label="Sélecteur de langue" onchange="if(this.value==='fr'){location.href='/';}else{location.href='/en/';}">
+          <option value="fr" selected>FR</option>
+          <option value="en">EN</option>
+        </select>
+      </nav>
+    </div>
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Navigation mobile">
+      <button class="close-mobile-nav" id="closeMobileNav" aria-label="Fermer le menu">×</button>
+      <a href="#features">Fonctionnalités</a>
+      <a href="#prompts">Prompts</a>
+      <a href="/blog">Blog</a>
+      <a href="#newsletter" class="newsletter-btn">Newsletter</a>
+      <select class="lang-select" aria-label="Sélecteur de langue mobile" onchange="if(this.value==='fr'){location.href='/';}else{location.href='/en/';}">
+        <option value="fr" selected>FR</option>
+        <option value="en">EN</option>
+      </select>
+    </nav>
+  </header>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main id="content">
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <!-- Vidéo background ElevenMusic Compilation (optimisée) -->
+      <video id="hero-bg-video" class="hero-bg-video" autoplay loop muted playsinline webkit-playsinline poster="/images/hero-poster.jpg" preload="metadata">
+        <source src="videos/eleven-music-compilation.mp4" type="video/mp4">
+      </video>
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-content">
+        <h1>
+          <span class="highlight-gradient">Génère de la musique IA</span><br>
+          d'une qualité studio <span class="animated-text">en quelques secondes</span>
+        </h1>
+        <p class="subheadline">
+          Découvre <strong>ElevenMusic</strong> par ElevenLabs : compose, expérimente, partage – <span class="typewriter"></span>
+        </p>
+        <div class="hero-actions">
+          <div class="cta-row hero-cta-bottom">
+            <a href="https://try.elevenlabs.io/q4qifzaxhkwg" target="_blank" class="cta-main" rel="noopener sponsored">
+              Essayez ElevenMusic gratuitement <span class="arrow">→</span>
+            </a>
+            <button class="play-audio-btn-inline" id="toggleHeroAudioBtn" type="button" aria-label="Activer/Couper le son">
+              <span id="audioBtnIcon">🔈</span>
+            </button>
+            <div class="audio-tooltip" id="audioTooltip">Activer le son</div>
+          </div>
+          <ul class="hero-points">
+            <li>🔊 Qualité professionnelle, aucune violation de droits</li>
+            <li>🚀 Génération instantanée, multi-genres, multi-langues</li>
+            <li>🎧 Compatible streaming, vidéo, podcast & plus</li>
+            <li>🖼️ Nouveautés 2025 : Image & Video (Beta) intégré à ElevenLabs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION FONCTIONNALITÉS -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2>
+          <svg width="38" height="38" viewBox="0 0 38 38" style="vertical-align:middle;margin-bottom:0.3em;">
+            <circle cx="19" cy="19" r="19" fill="#ff6a3d"/>
+            <text x="50%" y="60%" text-anchor="middle" font-size="20" fill="#fff" font-family="Arial" dy=".3em">🎵</text>
+          </svg>
+          Pourquoi choisir ElevenMusic&nbsp;?
+        </h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png" class="feature-icon" alt="Musique originale IA" width="64" height="64" loading="lazy" decoding="async"/>
+            <h3>Musique originale</h3>
+            <p>Génère des tracks uniques sans droits d'auteur.</p>
+          </div>
+          <div class="feature-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/126/126472.png" class="feature-icon" alt="Personnalisation totale IA" width="64" height="64" loading="lazy" decoding="async"/>
+            <h3>Personnalisation totale</h3>
+            <p>Choisis style, BPM, instruments, voix & effets.</p>
+          </div>
+          <div class="feature-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" class="feature-icon" alt="IA avancée ElevenLabs" width="64" height="64" loading="lazy" decoding="async"/>
+            <h3>IA avancée ElevenLabs</h3>
+            <p>Qualité audio premium, algo d'IA multi-langue.</p>
+          </div>
+          <div class="feature-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/727/727218.png" class="feature-icon" alt="Studio intégré IA" width="64" height="64" loading="lazy" decoding="async"/>
+            <h3>Studio intégré</h3>
+            <p>Compose, édite, exporte en un clic, prêt pour tes vidéos.</p>
+          </div>
+        </div>
+        <a href="https://try.elevenlabs.io/q4qifzaxhkwg" target="_blank" class="cta-secondary" rel="noopener sponsored">
+          Découvrir ElevenMusic <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION IMAGE & VIDEO BETA -->
+    <section class="features" id="image-video">
+      <div class="container">
+        <h2>
+          <svg width="36" height="36" viewBox="0 0 36 36" style="vertical-align:middle;margin-bottom:0.2em;">
+            <circle cx="18" cy="18" r="18" fill="#ff9159"/>
+            <text x="50%" y="60%" text-anchor="middle" font-size="18" fill="#fff" font-family="Arial" dy=".3em">🎥</text>
+          </svg>
+          Nouvelle mise à jour ElevenLabs : Image & Video (Beta)
+        </h2>
+        <p style="max-width:820px;margin:0 auto 1.4em;">L'annonce officielle du 17 nov. 2025 introduit Image & Video (Beta) dans ElevenLabs : création d'images, de clips vidéo et bande-son au même endroit. Workflow complet avec les voix ElevenLabs et ElevenMusic.</p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1625/1625047.png" class="feature-icon" alt="Génération d'images IA" width="64" height="64" loading="lazy" decoding="async"/>
+            <h3>Modèles image leaders</h3>
+            <p>Nanobanana, Flux Kontext, GPT Image, Seedream pour créer des visuels, storyboards et miniatures prêts à animer.</p>
+          </div>
+          <div class="feature-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" class="feature-icon" alt="Génération vidéo IA" width="64" height="64" loading="lazy" decoding="async"/>
+            <h3>Vidéo & lip-sync</h3>
+            <p>Veo, Sora, Kling, Wan, Seedance pour générer des clips, les assembler et synchroniser la voix ElevenLabs.</p>
+          </div>
+          <div class="feature-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5978/5978933.png" class="feature-icon" alt="Studio ElevenLabs" width="64" height="64" loading="lazy" decoding="async"/>
+            <h3>Studio unifié</h3>
+            <p>Export vers Studio : voix expressives, musique ElevenMusic, SFX, ajustement du timing et export vidéo final.</p>
+          </div>
+        </div>
+        <p class="newsletter-note" style="margin-top:1em;">Source : ElevenLabs Blog – <a href="https://try.elevenlabs.io/q4qifzaxhkwg" target="_blank" rel="noopener sponsored">Introducing ElevenLabs Image & Video</a>.</p>
+        <a href="https://try.elevenlabs.io/q4qifzaxhkwg" target="_blank" class="cta-main" rel="noopener sponsored">Tester Image & Video (Beta) <span class="arrow">→</span></a>
+      </div>
+    </section>
+
+    <!-- SECTION PROMPTS OFFICIELS ELEVENMUSIC -->
+    <section class="prompts" id="prompts">
+      <div class="container" style="position:relative;">
+        <svg width="92" height="92" viewBox="0 0 92 92" style="position:absolute;left:-60px;top:10px;opacity:0.88;z-index:1;display:none;" class="desktop-only">
+          <circle cx="46" cy="46" r="46" fill="#ff6a3d"/>
+          <text x="50%" y="60%" text-anchor="middle" font-size="50" fill="#fff" font-family="Arial" dy=".3em">🎧</text>
+        </svg>
+        <h2>
+          <svg width="35" height="35" viewBox="0 0 35 35" style="vertical-align:middle;margin-bottom:0.2em;">
+            <circle cx="17.5" cy="17.5" r="17.5" fill="#ff6a3d"/>
+            <text x="50%" y="57%" text-anchor="middle" font-size="18" fill="#fff" font-family="Arial" dy=".3em">🎶</text>
+          </svg>
+          Liste de prompts ElevenMusic (officiels)
+        </h2>
+        <div id="prompt-list" class="prompt-list">
+          <!-- Les prompts seront injectés ici par JS -->
+        </div>
+        <button id="copy-prompts" class="copy-btn">
+          <svg width="20" height="20" fill="none" style="vertical-align:middle;margin-right:5px;">
+            <rect x="3" y="3" width="14" height="14" rx="2" stroke="#fff" stroke-width="2"/>
+            <path d="M7 7h6v6H7z" fill="#ff9159"/>
+          </svg>
+          Copier tous les prompts
+        </button>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER / POPUP CAPTURE EMAIL -->
+    <section class="newsletter" id="newsletter">
+      <div class="container newsletter-flex">
+        <div>
+          <h2>💌 Reçois chaque semaine les <span class="highlight-gradient">meilleurs prompts IA musicaux</span> + tutos exclusifs</h2>
+
+          <form id="newsletter-form">
+            <input type="email" id="newsletter-email" name="email" placeholder="Ton email…" required autocomplete="email">
+            <button type="submit">Je m'inscris</button>
+          </form>
+
+          <p class="newsletter-note">Prompts officiels, tutos ElevenMusic, astuces, nouveautés… Désinscription en 1 clic, pas de spam.</p>
+
+          <div class="newsletter-badge-row">
+            <span class="newsletter-badge">Astuces IA exclusives</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="blog" id="blog">
+      <div class="container">
+        <h2>
+          <svg width="34" height="34" viewBox="0 0 34 34" style="vertical-align:middle;margin-bottom:0.2em;">
+            <circle cx="17" cy="17" r="17" fill="#ff6a3d"/>
+            <text x="50%" y="60%" text-anchor="middle" font-size="17" fill="#fff" font-family="Arial" dy=".3em">📝</text>
+          </svg>
+          Blog IA musique & guides ElevenMusic
+        </h2>
+        <div class="blog-cards">
+          <a href="/blog-1" class="blog-card">
+            <div style="background:#1f2532;height:155px;display:flex;align-items:center;justify-content:center;">
+              <svg width="80" height="80" fill="#fff"><text x="50%" y="60%" text-anchor="middle" font-size="60" font-family="Arial" dy=".3em">🎵</text></svg>
+            </div>
+            <h3>Créer sa première musique avec ElevenMusic IA (guide complet)</h3>
+            <p>Un tutoriel pas à pas pour générer ta première track IA en moins de 2 minutes, avec prompts et astuces pro.</p>
+          </a>
+          <a href="/blog-2" class="blog-card">
+            <div style="background:#253041;height:155px;display:flex;align-items:center;justify-content:center;">
+              <svg width="80" height="80" fill="#fff"><text x="50%" y="60%" text-anchor="middle" font-size="60" font-family="Arial" dy=".3em">🎹</text></svg>
+            </div>
+            <h3>Les meilleurs prompts pour des musiques IA uniques (exemples réels)</h3>
+            <p>Une sélection de prompts testés, classés par style (pop, rap, ciné, etc.), pour des résultats vraiment bluffants.</p>
+          </a>
+          <a href="https://try.elevenlabs.io/q4qifzaxhkwg" class="blog-card" target="_blank" rel="noopener sponsored">
+            <div style="background:#2d3949;height:155px;display:flex;align-items:center;justify-content:center;">
+              <svg width="80" height="80" fill="#fff"><text x="50%" y="60%" text-anchor="middle" font-size="60" font-family="Arial" dy=".3em">🖼️</text></svg>
+            </div>
+            <h3>Image & Video (Beta) : toutes les nouveautés</h3>
+            <p>Annonce officielle ElevenLabs du 17 nov 2025 : génération d'images, vidéos, lip-sync et workflow Studio unifié.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION AFFILIATION -->
+    <section class="affiliation" id="affiliation">
+      <div class="container">
+        <h2>
+          <svg width="31" height="31" viewBox="0 0 31 31" style="vertical-align:middle;margin-bottom:0.2em;">
+            <circle cx="15.5" cy="15.5" r="15.5" fill="#ff9159"/>
+            <text x="50%" y="58%" text-anchor="middle" font-size="17" fill="#fff" font-family="Arial" dy=".3em">💸</text>
+          </svg>
+          Gagne 22% de commission avec l'affiliation ElevenMusic
+        </h2>
+        <p>
+          Partage ton lien affilié et touche <strong>22% de commission</strong> sur tous les abonnements payants souscrits pendant 12 mois, avec cookies 90 jours.<br>
+          <span class="small">Programme officiel ElevenLabs (PartnerStack), paiement rapide dès 5$.</span>
+        </p>
+        <a href="https://try.elevenlabs.io/q4qifzaxhkwg" target="_blank" class="cta-main" rel="noopener sponsored">
+          Je veux promouvoir ElevenMusic <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div style="text-align:center;">
+          <svg width="40" height="40" viewBox="0 0 40 40" style="filter:drop-shadow(0 0 9px #ff6a3d44);margin-bottom:0.1em;">
+            <circle cx="20" cy="20" r="20" fill="#ff6a3d"/>
+            <text x="50%" y="60%" text-anchor="middle" font-size="20" fill="#fff" font-family="Arial" dy=".3em">❓</text>
+          </svg>
+        </div>
+        <h2>FAQ – Questions fréquentes</h2>
+        <div class="faq-list">
+          <div class="faq-item"><button>Combien je gagne avec l'affiliation ?</button>
+            <div class="faq-content">22% sur chaque paiement ElevenLabs (11% sur plan Business), cookie 90 jours, paiement PartnerStack dès 5$.</div>
+          </div>
+          <div class="faq-item"><button>La musique est-elle vraiment libre de droits ?</button>
+            <div class="faq-content">Oui, tracks originaux, zéro copyright strike, pour usage commercial et perso. Les deals Merlin/Kobalt couvrent la légalité.</div>
+          </div>
+          <div class="faq-item"><button>Quels genres ou langues sont pris en charge ?</button>
+            <div class="faq-content">Tous : pop, rap, rock, ciné, électro, orchestral… Texte en FR, EN, espagnol… même avec chant IA !</div>
+          </div>
+          <div class="faq-item"><button>Où trouver la liste officielle des prompts ElevenMusic ?</button>
+            <div class="faq-content">Dans la section "Prompts" ci-dessus et par newsletter (source : ElevenLabs docs officielles & Discord).</div>
+          </div>
+          <div class="faq-item"><button>ElevenLabs gère aussi les images et vidéos ?</button>
+            <div class="faq-content">Oui. Depuis l'annonce du 17 nov 2025, la suite Image & Video (Beta) réunit des modèles images (Nanobanana, Flux Kontext, GPT Image, Seedream) et vidéos (Veo, Sora, Kling, Wan, Seedance) avec lip-sync et montage Studio.</div>
+          </div>
+          <div class="faq-item"><button>Monétisation & conditions d'utilisation ?</button>
+            <div class="faq-content">Musique utilisable pour vidéos, podcasts, streaming, projets pros. Respectez juste la charte (pas d'usurpation artiste/contenu protégé).</div>
+          </div>
+          <div class="faq-item"><button>Comment changer la langue du site ?</button>
+            <div class="faq-content">Utilisez le sélecteur de langue en haut à droite pour passer à la version anglaise du site.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-flex">
+      <div style="display:flex;align-items:center;gap:1em;">
+        <img src="images/logo.png" alt="ElevenMusic-avis" class="footer-logo" width="140" height="32" loading="lazy" decoding="async">
+        <svg width="29" height="29" viewBox="0 0 29 29" style="filter:drop-shadow(0 0 8px #ff6a3d44);">
+          <circle cx="14.5" cy="14.5" r="14.5" fill="#ff6a3d"/>
+          <text x="50%" y="60%" text-anchor="middle" font-size="16" fill="#fff" font-family="Arial" dy=".3em">🎵</text>
+        </svg>
+          <svg width="26" height="26" viewBox="0 0 26 26" style="filter:drop-shadow(0 0 8px #ff6a3d44);">
+            <circle cx="13" cy="13" r="13" fill="#ff9159"/>
+            <text x="50%" y="60%" text-anchor="middle" font-size="14" fill="#fff" font-family="Arial" dy=".3em">🎧</text>
+          </svg>
+      </div>
+      <div>
+        <p>Site indépendant d'avis & guides – ElevenMusic-avis.com n'est pas ElevenLabs Inc.</p>
+        <p class="copyright">© 2025 ElevenMusic-avis.com – Tous droits réservés</p>
+      </div>
+      <div class="footer-links">
+        <a href="/blog">Blog ElevenMusic</a>
+        <a href="/blog-1">Guide débutant</a>
+        <a href="/blog-2">Prompts IA</a>
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/politique-de-confidentialite">Confidentialité</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://twitter.com/elevenlabsio" target="_blank" rel="noopener">@elevenlabsio</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="main.min.js" defer></script>
+
+  <!-- Gestion RGPD : chargement GA4 après consentement -->
+  <script>
+    (function() {
+      const banner = document.getElementById('cookie-banner');
+      const btnAccept = document.getElementById('cookie-accept');
+      const btnRefuse = document.getElementById('cookie-refuse');
+
+      function hideBanner(){ if(banner) banner.style.display='none'; }
+
+      function loadGA(){
+        if (document.getElementById('ga4-lib')) return;
+        const s = document.createElement('script');
+        s.async = true; s.id = 'ga4-lib';
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-FWXK1PDKDJ';
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = window.gtag || gtag;
+        gtag('js', new Date());
+        // Mise à jour du consentement (analytics autorisé)
+        gtag('consent', 'update', {
+          'analytics_storage': 'granted',
+          'functionality_storage': 'granted',
+          'security_storage': 'granted'
+        });
+        gtag('config', 'G-FWXK1PDKDJ', { 'anonymize_ip': true, 'allow_google_signals': false });
+      }
+
+      // État stocké ?
+      const saved = localStorage.getItem('cookie-consent'); // 'accepted' | 'refused'
+      if (saved === 'accepted') {
+        loadGA();
+        hideBanner();
+      } else if (saved === 'refused') {
+        hideBanner();
+      }
+
+      if (btnAccept) {
+        btnAccept.addEventListener('click', function(){
+          localStorage.setItem('cookie-consent','accepted');
+          loadGA();
+          hideBanner();
+        });
+      }
+      if (btnRefuse) {
+        btnRefuse.addEventListener('click', function(){
+          localStorage.setItem('cookie-consent','refused');
+          hideBanner();
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

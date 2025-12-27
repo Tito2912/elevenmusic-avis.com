@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Blog ElevenMusic – Guides, tutoriels et astuces musique IA</title>
+  <meta name="description" content="Explorez le blog ElevenMusic : tutoriels, exemples de prompts, conseils création musique IA et guide programme d'affiliation pour la plateforme de génération musicale ElevenLabs.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Hreflang + Canonical -->
+  <link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/blog">
+  <link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/blog">
+  <link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/blog">
+  <link rel="canonical" href="https://elevenmusic-avis.com/blog">
+
+  <!-- Icons / CSS -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/png">
+  <link rel="stylesheet" href="style.min.css">
+
+  <!-- Perf hints -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog ElevenMusic – Guides, tutoriels et astuces musique IA">
+  <meta property="og:description" content="Explorez le blog ElevenMusic : tutoriels, exemples de prompts, conseils création musique IA et guide programme d'affiliation.">
+  <meta property="og:image" content="https://elevenmusic-avis.com/images/og-elevenmusic.jpg">
+  <meta property="og:url" content="https://elevenmusic-avis.com/blog">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog ElevenMusic – Guides, tutoriels et astuces musique IA">
+  <meta name="twitter:description" content="Explorez le blog ElevenMusic : tutoriels, exemples de prompts, conseils création musique IA et guide programme d'affiliation.">
+  <meta name="twitter:image" content="https://elevenmusic-avis.com/images/og-elevenmusic.jpg">
+
+  <!-- Consent Mode v2 : défaut (aucune analytics avant consentement) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied',
+      'functionality_storage': 'granted',
+      'security_storage': 'granted'
+    });
+  </script>
+
+  <!-- JSON-LD Blog (présent) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog ElevenMusic",
+    "description": "Guides musique IA, tutoriels et astuces pour la plateforme de génération musicale ElevenLabs",
+    "url": "https://elevenmusic-avis.com/blog",
+    "inLanguage": "fr",
+    "author": { "@type": "Organization", "name": "ElevenMusic-avis.com" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ElevenMusic-avis.com",
+      "logo": { "@type": "ImageObject", "url": "https://elevenmusic-avis.com/images/logo.png" }
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://elevenmusic-avis.com/images/og-elevenmusic.jpg",
+      "width": "1200",
+      "height": "630"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD ItemList des articles (ajout) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "url":"https://elevenmusic-avis.com/blog-1",
+        "name":"Créer sa première musique avec ElevenMusic IA (guide complet)"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "url":"https://elevenmusic-avis.com/blog-2",
+        "name":"Les meilleurs prompts pour des musiques IA uniques (exemples réels)"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="hero-merged">
+  <!-- Bannière cookies -->
+  <div id="cookie-banner" class="cookie-banner" role="region" aria-label="Bannière cookies">
+    <span>Ce site utilise des cookies pour améliorer votre expérience et mesurer l'audience. <a href="/mentions-legales" target="_blank" rel="noopener">Mentions légales</a> | <a href="/politique-de-confidentialite" target="_blank" rel="noopener">Politique de confidentialité</a></span>
+    <div class="cookie-actions">
+      <button id="cookie-refuse" type="button">Refuser</button>
+      <button id="cookie-accept" type="button">J'accepte</button>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-flex">
+      <a href="/" class="logo">
+        <img src="images/logo.png" alt="ElevenMusic" width="180" height="40" fetchpriority="high" decoding="async">
+      </a>
+      <nav class="header-nav" id="mainNav" aria-label="Navigation principale">
+        <a href="/#features">Fonctionnalités</a>
+        <a href="/#prompts">Prompts</a>
+        <a href="/blog">Blog</a>
+        <a href="/#newsletter" class="newsletter-btn">Newsletter</a>
+        <select class="lang-select" aria-label="Sélecteur de langue" onchange="if(this.value==='fr'){location.href='/blog';}else{location.href='/en/blog';}">
+          <option value="fr" selected>FR</option>
+          <option value="en">EN</option>
+        </select>
+      </nav>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu">&#9776;</button>
+    </div>
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Navigation mobile">
+      <button class="close-mobile-nav" id="closeMobileNav" aria-label="Fermer le menu">×</button>
+      <a href="/#features">Fonctionnalités</a>
+      <a href="/#prompts">Prompts</a>
+      <a href="/blog">Blog</a>
+      <a href="/#newsletter" class="newsletter-btn">Newsletter</a>
+      <select class="lang-select" aria-label="Sélecteur de langue mobile" onchange="if(this.value==='fr'){location.href='/blog';}else{location.href='/en/blog';}">
+        <option value="fr" selected>FR</option>
+        <option value="en">EN</option>
+      </select>
+    </nav>
+  </header>
+
+  <main class="blog-article">
+    <article class="container">
+      <div class="blog-header">
+        <div class="blog-badge">Hub Blog</div>
+        <h1>Blog ElevenMusic – Guides & tutoriels musique IA</h1>
+        <p class="blog-meta">Derniers articles et tutoriels pour la création musicale IA</p>
+      </div>
+
+      <div class="blog-content">
+        <p>Bienvenue sur le blog ElevenMusic, votre ressource pour apprendre à créer de la musique IA incroyable avec la technologie ElevenLabs. Découvrez des tutoriels, des exemples de prompts, des astuces et des guides pour maîtriser la génération de musique IA.</p>
+
+        <h2>Articles à la une</h2>
+
+        <div class="blog-cards">
+          <a href="/blog-1" class="blog-card">
+            <div style="background:#6E47F9;height:155px;display:flex;align-items:center;justify-content:center;">
+              <svg width="80" height="80" fill="#fff" role="img" aria-label="Icône musique"><text x="50%" y="60%" text-anchor="middle" font-size="60" font-family="Arial" dy=".3em">🎵</text></svg>
+            </div>
+            <h3>Créer sa première musique avec ElevenMusic IA (guide complet)</h3>
+            <p>Un tutoriel pas à pas pour générer ta première track IA en moins de 2 minutes, avec prompts et astuces pro.</p>
+            <div class="blog-meta" style="padding:0 1.1em 1.2em;">Temps de lecture : 7 min</div>
+          </a>
+
+          <a href="/blog-2" class="blog-card">
+            <div style="background:#48bbff;height:155px;display:flex;align-items:center;justify-content:center;">
+              <svg width="80" height="80" fill="#fff" role="img" aria-label="Icône clavier"><text x="50%" y="60%" text-anchor="middle" font-size="60" font-family="Arial" dy=".3em">🎹</text></svg>
+            </div>
+            <h3>Les meilleurs prompts pour des musiques IA uniques (exemples réels)</h3>
+            <p>Une sélection de prompts testés, classés par style (pop, rap, ciné, etc.), pour des résultats vraiment bluffants.</p>
+            <div class="blog-meta" style="padding:0 1.1em 1.2em;">Temps de lecture : 9 min</div>
+          </a>
+        </div>
+
+        <h2>Catégories de création musicale IA</h2>
+
+        <div class="prompt-group">
+          <h3>Pour débuter</h3>
+          <p>Guides accessibles aux débutants pour comprendre les bases de la génération de musique IA avec ElevenMusic :</p>
+          <ul>
+            <li>Comment créer votre compte</li>
+            <li>Comprendre l'interface</li>
+            <li>Votre première génération musicale</li>
+            <li>Formats et options d'export</li>
+          </ul>
+        </div>
+
+        <div class="prompt-group">
+          <h3>Ingénierie de prompts</h3>
+          <p>Apprenez à formuler des prompts efficaces pour de meilleurs résultats en musique IA :</p>
+          <ul>
+            <li>Structure de base des prompts</li>
+            <li>Techniques avancées</li>
+            <li>Prompts par genre musical</li>
+            <li>Création d'ambiance et d'atmosphère</li>
+          </ul>
+        </div>
+
+        <div class="prompt-group">
+          <h3>Cas d'usage & applications</h3>
+          <p>Découvrez des applications pratiques pour votre musique générée par IA :</p>
+          <ul>
+            <li>Vidéos YouTube et intros</li>
+            <li>Musique de fond pour podcasts</li>
+            <li>Contenu pour réseaux sociaux</li>
+            <li>Projets commerciaux</li>
+          </ul>
+        </div>
+
+        <div class="prompt-group">
+          <h3>Programme d'affiliation</h3>
+          <p>Apprenez à monétiser vos connaissances sur ElevenMusic :</p>
+          <ul>
+            <li>Fonctionnement du programme d'affiliation</li>
+            <li>Structure des commissions</li>
+            <li>Stratégies de promotion</li>
+            <li>Suivi et paiements</li>
+          </ul>
+        </div>
+
+        <div class="blog-tip">
+          <strong>Astuce pro :</strong> Abonnez-vous à notre newsletter pour recevoir les derniers prompts et tutoriels directement dans votre boîte mail chaque semaine.
+        </div>
+
+        <div class="blog-cta">
+          <p>Prêt à créer de la musique IA incroyable ?</p>
+          <a href="https://try.elevenlabs.io/q4qifzaxhkwg" class="cta-main" target="_blank" rel="noopener sponsored">Essayer ElevenMusic Gratuitement →</a>
+        </div>
+
+        <h2>FAQ</h2>
+        <div class="blog-faq">
+          <div class="faq-item"><button>À quelle fréquence du nouveau contenu est publié ?</button>
+            <div class="faq-content">Nous publions de nouveaux tutoriels et guides toutes les 1-2 semaines, en nous concentrant sur les dernières fonctionnalités et meilleures pratiques.</div>
+          </div>
+          <div class="faq-item"><button>Puis-je demander des sujets de tutoriels spécifiques ?</button>
+            <div class="faq-content">Oui ! Contactez-nous avec vos suggestions, et nous les considérerons pour de futurs contenus.</div>
+          </div>
+          <div class="faq-item"><button>Les techniques montrées sont-elles applicables à d'autres outils de musique IA ?</button>
+            <div class="faq-content">Bien que centrées sur ElevenMusic, de nombreux concepts d'ingénierie de prompts et de création musicale s'appliquent également à d'autres plateformes de musique IA.</div>
+          </div>
+          <div class="faq-item"><button>Comment accéder à la version anglaise du blog ?</button>
+            <div class="faq-content">Utilisez le sélecteur de langue en haut à droite de la page pour passer à la version anglaise du site.</div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-flex">
+      <div style="display:flex;align-items:center;gap:1em;">
+        <img src="images/logo.png" alt="ElevenMusic-avis" class="footer-logo" width="140" height="32" loading="lazy" decoding="async">
+        <svg width="29" height="29" viewBox="0 0 29 29" style="filter:drop-shadow(0 0 8px #48bbff88);">
+          <circle cx="14.5" cy="14.5" r="14.5" fill="#48bbff"/>
+          <text x="50%" y="60%" text-anchor="middle" font-size="16" fill="#fff" font-family="Arial" dy=".3em">🎵</text>
+        </svg>
+      </div>
+      <div>
+        <p>Site indépendant d'avis & guides – ElevenMusic-avis.com n'est pas ElevenLabs Inc.</p>
+        <p class="copyright">© 2025 ElevenMusic-avis.com – Tous droits réservés</p>
+      </div>
+      <div class="footer-links">
+        <a href="/blog">Blog ElevenMusic</a>
+        <a href="/blog-1">Guide débutant</a>
+        <a href="/blog-2">Prompts IA</a>
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/politique-de-confidentialite">Confidentialité</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="main.min.js" defer></script>
+
+  <!-- Gestion RGPD : chargement GA4 seulement après consentement -->
+  <script>
+    (function() {
+      const banner = document.getElementById('cookie-banner');
+      const btnAccept = document.getElementById('cookie-accept');
+      const btnRefuse = document.getElementById('cookie-refuse');
+
+      function hideBanner(){ if(banner) banner.style.display='none'; }
+
+      function loadGA(){
+        if (document.getElementById('ga4-lib')) return;
+        const s = document.createElement('script');
+        s.async = true; s.id = 'ga4-lib';
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-FWXK1PDKDJ';
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = window.gtag || gtag;
+        gtag('js', new Date());
+        gtag('consent', 'update', {
+          'analytics_storage': 'granted',
+          'functionality_storage': 'granted',
+          'security_storage': 'granted'
+        });
+        gtag('config', 'G-FWXK1PDKDJ', { 'anonymize_ip': true, 'allow_google_signals': false });
+      }
+
+      const saved = localStorage.getItem('cookie-consent'); // 'accepted' | 'refused'
+      if (saved === 'accepted') { loadGA(); hideBanner(); }
+      else if (saved === 'refused') { hideBanner(); }
+
+      if (btnAccept) btnAccept.addEventListener('click', function(){
+        localStorage.setItem('cookie-consent','accepted');
+        loadGA(); hideBanner();
+      });
+      if (btnRefuse) btnRefuse.addEventListener('click', function(){
+        localStorage.setItem('cookie-consent','refused');
+        hideBanner();
+      });
+    })();
+  </script>
+</body>
+</html>
