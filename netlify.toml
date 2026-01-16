@@ -6,6 +6,16 @@
   NPM_VERSION  = "9"
 
 # =========================
+# Canonical host (avoid www)
+# =========================
+[[redirects]]
+  from = "/*"
+  to = "https://elevenmusic-avis.com/:splat"
+  status = 301
+  force = true
+  conditions = { Host = ["www.elevenmusic-avis.com"] }
+
+# =========================
 # Sécurité & SEO par défaut
 # =========================
 [[headers]]

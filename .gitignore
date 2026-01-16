@@ -5,3 +5,7 @@ Thumbs.db
 
 # Files too large for GitHub (ignored)
 videos/eleven-music-compilation.mp4
+
+# Ahrefs exports / reports
+ahrefs-issues-*/
+*_all-issues_*.zip
