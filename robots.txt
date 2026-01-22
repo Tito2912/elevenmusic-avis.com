@@ -21,20 +21,3 @@ Sitemap: https://elevenmusic-avis.com/sitemap.xml
 
 # Crawl delay (Google ignore ; utile pour Bing/Yandex)
 Crawl-delay: 1
-
-# Specific bots instructions
-User-agent: GPTBot
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: Claude-Web
-Disallow: /
-
-# Autorisations IA (deverrouillees)
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
