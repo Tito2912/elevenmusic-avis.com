@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/><title>Su primera pista de ElevenMusic AI: guía paso a paso</title>
-<meta name="description" content="Tutorial paso a paso para generar su primera pista de IA con ElevenMusic: indicaciones, consejos de pro y ejemplos concretos."/>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Guía de ElevenMusic: tu primera música paso a paso</title>
+<meta name="description" content="Tutorial paso a paso para generar tu primera pista con IA en ElevenMusic: prompts, consejos pro y ejemplos concretos."/>
 <meta name="robots" content="index, follow"/>
 <!-- Hreflang + Canonical -->
 <link href="https://elevenmusic-avis.com/blog-1" hreflang="fr" rel="alternate"/>
@@ -21,23 +21,23 @@
 <!-- Preload LCP candidate (hero image) -->
 <link as="image" href="/images/blog-1-hero.png" rel="preload"/>
 <!-- Open Graph -->
-<meta property="og:title" content="Su primera pista de ElevenMusic AI: guía paso a paso"/>
-<meta property="og:description" content="Tutorial paso a paso para generar su primera pista de IA con ElevenMusic: indicaciones, consejos de pro y ejemplos concretos."/>
+<meta property="og:title" content="Guía de ElevenMusic: tu primera música paso a paso"/>
+<meta property="og:description" content="Tutorial paso a paso para generar tu primera pista con IA en ElevenMusic: prompts, consejos pro y ejemplos concretos."/>
 <meta property="og:type" content="website"/>
-<meta property="og:site_name" content="ElevenMusic Review"/>
+<meta property="og:site_name" content="Reseña ElevenMusic"/>
 <meta property="og:image" content="https://elevenmusic-avis.com/images/og-elevenmusic.jpg"/>
 <meta property="og:url" content="https://elevenmusic-avis.com/es/blog-1"/>
 <meta property="og:locale" content="es_ES"/>
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Su primera pista de ElevenMusic AI: guía paso a paso"/>
-<meta name="twitter:description" content="Tutorial paso a paso para generar su primera pista de IA con ElevenMusic: indicaciones, consejos de pro y ejemplos concretos."/>
+<meta name="twitter:title" content="Guía de ElevenMusic: tu primera música paso a paso"/>
+<meta name="twitter:description" content="Tutorial paso a paso para generar tu primera pista con IA en ElevenMusic: prompts, consejos pro y ejemplos concretos."/>
 <meta name="twitter:image" content="https://elevenmusic-avis.com/images/og-elevenmusic.jpg"/>
 <!-- Consent Mode v2: default (no analytics before consent) -->
 <!-- JSON-LD Article (kept & valid) -->
 <!-- Google Translate (as in source) -->
 <meta name="google" content="notranslate"/>
-<meta property="og:image:alt" content="Su primera pista de ElevenMusic AI: guía paso a paso"/><meta name="twitter:image:alt" content="Su primera pista de ElevenMusic AI: guía paso a paso"/><meta name="twitter:url" content="https://elevenmusic-avis.com/es/blog-1"/><link rel="preconnect" href="https://www.gstatic.com" crossorigin=""/><script>
+<meta property="og:image:alt" content="Guía de ElevenMusic: tu primera música paso a paso"/><meta name="twitter:image:alt" content="Guía de ElevenMusic: tu primera música paso a paso"/><meta name="twitter:url" content="https://elevenmusic-avis.com/es/blog-1"/><link rel="preconnect" href="https://www.gstatic.com" crossorigin=""/><script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('consent', 'default', {
@@ -51,8 +51,8 @@
   </script><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Create Your First Music with ElevenMusic AI (Complete Guide)",
-  "description": "Step-by-step tutorial to generate your first AI track with ElevenMusic: prompts, pro tips and concrete examples.",
+  "headline": "Crea tu primera música con ElevenMusic (guía completa)",
+  "description": "Tutorial paso a paso para generar tu primera pista con IA en ElevenMusic: prompts, consejos pro y ejemplos concretos.",
   "image": {
     "@type": "ImageObject",
     "url": "https://elevenmusic-avis.com/images/og-elevenmusic.jpg",
@@ -82,29 +82,31 @@
 <body class="hero-merged">
 <!-- Cookie banner -->
 <div aria-label="banner de cookies" class="cookie-banner" id="cookie-banner" role="region">
-<span>Este sitio utiliza cookies para mejorar su experiencia y medir el público.
+<span>Este sitio utiliza cookies para mejorar tu experiencia y medir la audiencia.
       <a href="/es/legal-notice" rel="noopener noreferrer" target="_blank">Aviso legal</a> |
       <a href="/es/privacy-policy" rel="noopener noreferrer" target="_blank">Política de privacidad</a>
 </span>
 <div class="cookie-actions">
-<button id="cookie-refuse" type="button">Declin</button>
-<button id="cookie-accept" type="button">Acepto</button>
+<button id="cookie-refuse" type="button">Rechazar</button>
+<button id="cookie-accept" type="button">Aceptar</button>
 </div>
 </div>
 <!-- HEADER -->
 <header>
 <div class="header-flex">
 <a class="logo" href="/es/">
-<img alt="OnceMusic" decoding="async" height="40" src="../images/logo.png" width="180"/>
+<img alt="ElevenMusic" decoding="async" height="40" src="../images/logo.png" width="180"/>
 </a>
 <nav aria-label="Navegación primaria" class="header-nav" id="mainNav">
 <a href="/es/#features">Características</a>
 <a href="/es/#prompts">Prompts</a>
 <a href="/es/blog">Blog</a>
 <a class="newsletter-btn" href="/es/#newsletter">Newsletter</a>
-<select aria-label="Selector de idioma" class="lang-select" onchange="if(this.value==='fr'){location.href='/blog-1';}else{location.href='/es/blog-1';}">
-<option selected="" value="en">EN</option>
+<select aria-label="Selector de idioma" class="lang-select">
 <option value="fr">FR</option>
+<option value="en">EN</option>
+<option selected="" value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 <button aria-label="Menú" class="hamburger" id="hamburgerBtn">☰</button>
@@ -116,9 +118,11 @@
 <a href="/es/#prompts">Prompts</a>
 <a href="/es/blog">Blog</a>
 <a class="newsletter-btn" href="/es/#newsletter">Newsletter</a>
-<select aria-label="Selector de idiomas (móvil)" class="lang-select" onchange="if(this.value==='fr'){location.href='/blog-1';}else{location.href='/es/blog-1';}">
-<option selected="" value="en">EN</option>
+<select aria-label="Selector de idiomas (móvil)" class="lang-select">
 <option value="fr">FR</option>
+<option value="en">EN</option>
+<option selected="" value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 </header>
@@ -126,38 +130,38 @@
 <article class="container">
 <div class="blog-header">
 <div class="blog-badge">Tutorial</div>
-<h1>Crea tu primera música con ElevenMusic AI (Guía Completa)</h1>
+<h1>Crea tu primera música con ElevenMusic (guía completa)</h1>
 <p class="blog-meta">Publicado el 15 de marzo de 2025 • Tiempo de lectura: 7 min</p>
 </div>
 <div class="blog-content">
 <figure class="blog-hero">
-<img alt="OnceInterfaz musica con música AI generada" decoding="async" fetchpriority="high" height="630" src="../images/blog-1-hero.png" width="1200"/>
-<figcaption>Interfaz intuitiva de ElevenMusic para crear música AI</figcaption>
+<img alt="Interfaz de ElevenMusic con música generada con IA" decoding="async" fetchpriority="high" height="630" src="../images/blog-1-hero.png" width="1200"/>
+<figcaption>Interfaz intuitiva de ElevenMusic para crear música con IA</figcaption>
 </figure>
-<p>OnceMusic de ElevenLabs revoluciona la creación de música permitiendo a cualquiera generar pistas originales en segundos. Esta guía paso a paso le mostrará cómo crear su primera composición, incluso sin conocimiento musical.</p>
-<h2>Paso 1: Access ElevenMusic</h2>
-<p>Ve. <a href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="noopener sponsored noreferrer" target="_blank">el sitio web oficial de ElevenMusic</a> y iniciar sesión (o crear una cuenta gratuita). La versión gratuita ya permite pruebas completas.</p>
+<p>ElevenMusic de ElevenLabs revoluciona la creación musical: cualquiera puede generar pistas originales en segundos. Esta guía paso a paso te muestra cómo crear tu primera composición, incluso sin conocimientos musicales.</p>
+<h2>Paso 1: Accede a ElevenMusic</h2>
+<p>Ve al <a href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="noopener sponsored noreferrer" target="_blank">sitio web oficial de ElevenMusic</a> e inicia sesión (o crea una cuenta). La versión gratuita ya permite probar el flujo completo.</p>
 <h2>Paso 2: Entender la interfaz</h2>
 <p>El estudio consta de 3 secciones principales:</p>
 <ul>
-<li><strong>Momento de música</strong>: Describe tu música</li>
+<li><strong>Prompt musical</strong>: describe tu música</li>
 <li><strong>Ajustes avanzados</strong>: Estilo, BPM, instrumentos</li>
-<li><strong>Vista previa</strong>: Escuchar y ajustar</li>
+<li><strong>Previsualización</strong>: escucha y ajusta</li>
 </ul>
 <div class="blog-tip">
-<strong>Pro tip</strong>: Comience con simples impulsos como "música pop energética" antes de experimentar con descripciones complejas.
+<strong>Consejo pro</strong>: Empieza con prompts simples como "música pop energética" antes de experimentar con descripciones complejas.
         </div>
-<h2>Paso 3: Tu primer problema</h2>
-<p>Pruebe este aviso para comenzar:</p>
+<h2>Paso 3: Tu primer prompt</h2>
+<p>Prueba este prompt para empezar:</p>
 <div class="code-block">
 <code>"An energetic electro pop music with bright synths and catchy melody, tempo 120 BPM, no lyrics"</code>
-<button class="copy-code">Copiado</button>
+<button class="copy-code">Copiar</button>
 </div>
 <h2>Paso 4: Personalización avanzada</h2>
 <p>Explore las opciones:</p>
 <table class="blog-table">
 <tr>
-<th>Parámeter</th>
+<th>Parámetro</th>
 <th>Valores recomendados</th>
 </tr>
 <tr>
@@ -170,39 +174,39 @@
 </tr>
 <tr>
 <td>Instrumentos</td>
-<td>Sinth, Piano, Guitar, Drums...</td>
+<td>Synth, Piano, Guitarra, Batería...</td>
 </tr>
 </table>
 <h2>Paso 5: Generación y exportación</h2>
-<p>Haga clic en "Generar" (cuenta 15-45 segundos). Una vez satisfecho:</p>
+<p>Haz clic en "Generar" (tarda 15-45 segundos). Cuando estés satisfecho:</p>
 <ol>
 <li>Descargar el archivo .mp3 o .wav</li>
 <li>Compartir el enlace directamente</li>
-<li>Integrate into your video projects</li>
+<li>Integrarlo en tus proyectos de vídeo</li>
 </ol>
 <div class="blog-case">
 <h3>Caso práctico: Música para YouTube</h3>
 <p>Para una potente introducción de YouTube:</p>
 <code>"Short dynamic intro with powerful beats and futuristic sound effects, 10 seconds, cyberpunk style"</code>
-<p>Resultado instantáneo, libre de regalías para su canal.</p>
+<p>Resultado instantáneo, libre de royalties para tu canal.</p>
 </div>
-<h2>Creación FAQ</h2>
+<h2>FAQ (creación)</h2>
 <div class="blog-faq">
 <div class="faq-item"><button>¿Puedo generar múltiples versiones?</button>
-<div class="faq-content">Sí, cada generación crea una variación única. Prueba con "Variation 1", "Slower version" etc.</div>
+<div class="faq-content">Sí, cada generación crea una variación única. Prueba con "Variation 1", "Slower version", etc.</div>
 </div>
 <div class="faq-item"><button>¿Cómo conseguir un resultado más profesional?</button>
 <div class="faq-content">Especifique los instrumentos ("Piano eléctrico Rhodes"), la atmósfera ("noche urbana rara") y las referencias ("estilo Punk").</div>
 </div>
 </div>
 <div class="blog-cta">
-<p>¿Listo para crear? <a class="cta-main" href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="noopener sponsored noreferrer" target="_blank">Pruebe ElevenMusic Gratis →</a></p>
+<p>¿Listo para crear? <a class="cta-main" href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="noopener sponsored noreferrer" target="_blank">Prueba ElevenMusic gratis →</a></p>
 </div>
 <div class="blog-case" style="margin-top:2em;">
 <h3>Sigue explorando ElevenMusic</h3>
 <ul class="related-list">
-<li><a href="/es/blog-2">Los mejores impulsos de EvenMusic para conseguir canciones únicas</a></li>
-<li><a href="/es/blog">Todas las once guías musicas (centro de blogs)</a></li>
+<li><a href="/es/blog-2">Los mejores prompts de ElevenMusic para conseguir canciones únicas</a></li>
+<li><a href="/es/blog">Todas las guías de ElevenMusic (blog)</a></li>
 </ul>
 </div>
 </div>
@@ -212,20 +216,20 @@
 <footer>
 <div class="container footer-flex">
 <div style="display:flex;align-items:center;gap:1em;">
-<img alt="OnceMusic-avis" class="footer-logo" decoding="async" height="32" loading="lazy" src="../images/logo.png" width="140"/>
+<img alt="ElevenMusic-avis" class="footer-logo" decoding="async" height="32" loading="lazy" src="../images/logo.png" width="140"/>
 <svg height="29" style="filter:drop-shadow(0 0 8px #48bbff88);" viewbox="0 0 29 29" width="29">
 <circle cx="14.5" cy="14.5" fill="#48bbff" r="14.5"></circle>
 <text dy=".3em" fill="#fff" font-family="Arial" font-size="16" text-anchor="middle" x="50%" y="60%">🎵</text>
 </svg>
 </div>
 <div>
-<p>Revista independiente &amp; guía – ElevenMusic-avis.com no es ElevenLabs Inc.</p>
-<p class="copyright">© 2025 EvenMusic-avis.com – Todos los derechos reservados</p>
+<p>Reseña independiente y guía – ElevenMusic-avis.com no es ElevenLabs Inc.</p>
+<p class="copyright">© 2025 ElevenMusic-avis.com – Todos los derechos reservados</p>
 </div>
 <div class="footer-links">
 <a href="/es/blog">ElevenMusic Blog</a>
 <a href="/es/blog-1">Guía de inicio</a>
-<a href="/es/blog-2">Anunciaciones de inteligencia artificial</a>
+<a href="/es/blog-2">Prompts de IA</a>
 <a href="/es/legal-notice">Aviso legal</a>
 <a href="/es/privacy-policy">Política de privacidad</a>
 <a href="/sitemap.xml">Mapa del sitio</a>
@@ -234,61 +238,7 @@
 </footer>
 <!-- JS -->
 <script defer="" src="/main.min.js"></script>
-<!-- Article-specific script (kept) -->
-<script>
-    document.querySelectorAll('.copy-code').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const code = btn.previousElementSibling.textContent;
-        navigator.clipboard.writeText(code);
-        btn.textContent = 'Copied!';
-        setTimeout(() => btn.textContent = 'Copy', 2000);
-      });
-    });
-  </script>
-<!-- Consent handling: load GA4 only after explicit consent -->
-<script>
-    (function() {
-      const banner = document.getElementById('cookie-banner');
-      const btnAccept = document.getElementById('cookie-accept');
-      const btnRefuse = document.getElementById('cookie-refuse');
+<!-- RGPD/GA4: gere dans main.js -->
 
-      function hideBanner(){ if (banner) banner.style.display = 'none'; }
-
-      function loadGA(){
-        if (document.getElementById('ga4-lib')) return;
-        const s = document.createElement('script');
-        s.async = true; s.id = 'ga4-lib';
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-FWXK1PDKDJ';
-        document.head.appendChild(s);
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        window.gtag = window.gtag || gtag;
-
-        gtag('js', new Date());
-        // Update consent (analytics allowed)
-        gtag('consent', 'update', {
-          'analytics_storage': 'granted',
-          'functionality_storage': 'granted',
-          'security_storage': 'granted'
-        });
-        gtag('config', 'G-FWXK1PDKDJ', { 'anonymize_ip': true, 'allow_google_signals': false });
-      }
-
-      // Existing choice?
-      const saved = localStorage.getItem('cookie-consent'); // 'accepted' | 'refused'
-      if (saved === 'accepted') { loadGA(); hideBanner(); }
-      else if (saved === 'refused') { hideBanner(); }
-
-      if (btnAccept) btnAccept.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','accepted');
-        loadGA(); hideBanner();
-      });
-      if (btnRefuse) btnRefuse.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','refused');
-        hideBanner();
-      });
-    })();
-  </script>
 </body>
 </html>

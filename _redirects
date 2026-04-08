@@ -17,3 +17,17 @@ https://www.elevenmusic-avis.com/* https://elevenmusic-avis.com/:splat 301!
 /en/blog-2.html                    /en/blog-2                            301!
 /en/legal-notice.html              /en/legal-notice                      301!
 /en/privacy-policy.html            /en/privacy-policy                    301!
+
+/es/index.html                     /es/                                  301!
+/es/blog.html                      /es/blog                              301!
+/es/blog-1.html                    /es/blog-1                            301!
+/es/blog-2.html                    /es/blog-2                            301!
+/es/legal-notice.html              /es/legal-notice                      301!
+/es/privacy-policy.html            /es/privacy-policy                    301!
+
+/de/index.html                     /de/                                  301!
+/de/blog.html                      /de/blog                              301!
+/de/blog-1.html                    /de/blog-1                            301!
+/de/blog-2.html                    /de/blog-2                            301!
+/de/legal-notice.html              /de/legal-notice                      301!
+/de/privacy-policy.html            /de/privacy-policy                    301!

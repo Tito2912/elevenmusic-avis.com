@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/><title>Legal Notice – ElevenMusic Review</title>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Legal Notice – ElevenMusic Review</title>
 <meta name="description" content="Legal notice of ElevenMusic-avis.com: publisher, publication manager, hosting, personal data, intellectual property, cookie policy, GDPR compliance."/>
 <meta name="robots" content="index, follow"/>
 <meta name="google" content="notranslate"/>
@@ -70,9 +70,11 @@
 <a class="active" href="/en/legal-notice">Legal Notice</a>
 <a href="/en/privacy-policy">Privacy</a>
 </nav>
-<select aria-label="Language selector" class="lang-select" onchange="if(this.value==='fr'){location.href='/mentions-legales';}else{location.href='/en/legal-notice';}">
-<option selected="" value="en">EN</option>
+<select aria-label="Language selector" class="lang-select">
 <option value="fr">FR</option>
+<option selected="" value="en">EN</option>
+<option value="es">ES</option>
+<option value="de">DE</option>
 </select>
 <button aria-label="Open menu" class="hamburger" id="hamburgerBtn">☰</button>
 </div>
@@ -85,9 +87,11 @@
 <a class="newsletter-btn" href="/en/#newsletter">Newsletter</a>
 <a class="active" href="/en/legal-notice">Legal Notice</a>
 <a href="/en/privacy-policy">Privacy</a>
-<select aria-label="Mobile language selector" class="lang-select" onchange="if(this.value==='fr'){location.href='/mentions-legales';}else{location.href='/en/legal-notice';}">
-<option selected="" value="en">EN</option>
+<select aria-label="Mobile language selector" class="lang-select">
 <option value="fr">FR</option>
+<option selected="" value="en">EN</option>
+<option value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 </header>
@@ -172,50 +176,7 @@
 </footer>
 <!-- JS -->
 <script defer="" src="/main.min.js"></script>
-<!-- Consent handling: load GA4 only after explicit consent -->
-<script>
-    (function() {
-      const banner = document.getElementById('cookie-banner');
-      const btnAccept = document.getElementById('cookie-accept');
-      const btnRefuse = document.getElementById('cookie-refuse');
+<!-- RGPD/GA4: gere dans main.js -->
 
-      function hideBanner(){ if (banner) banner.style.display = 'none'; }
-
-      function loadGA(){
-        if (document.getElementById('ga4-lib')) return;
-        const s = document.createElement('script');
-        s.async = true; s.id = 'ga4-lib';
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-FWXK1PDKDJ';
-        document.head.appendChild(s);
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        window.gtag = window.gtag || gtag;
-
-        gtag('js', new Date());
-        // Update consent (analytics allowed)
-        gtag('consent', 'update', {
-          'analytics_storage': 'granted',
-          'functionality_storage': 'granted',
-          'security_storage': 'granted'
-        });
-        gtag('config', 'G-FWXK1PDKDJ', { 'anonymize_ip': true, 'allow_google_signals': false });
-      }
-
-      // Existing choice?
-      const saved = localStorage.getItem('cookie-consent'); // 'accepted' | 'refused'
-      if (saved === 'accepted') { loadGA(); hideBanner(); }
-      else if (saved === 'refused') { hideBanner(); }
-
-      if (btnAccept) btnAccept.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','accepted');
-        loadGA(); hideBanner();
-      });
-      if (btnRefuse) btnRefuse.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','refused');
-        hideBanner();
-      });
-    })();
-  </script>
 </body>
 </html>

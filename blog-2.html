@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/><title>Prompts ElevenMusic : 15 idées pour des musiques IA uniques</title>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Prompts ElevenMusic : 15 idées pour des musiques IA uniques</title>
 <meta name="description" content="Sélection de prompts testés pour ElevenMusic : pop, rap, ciné… avec astuces pour des résultats pros."/>
 <meta name="robots" content="index, follow"/>
 <!-- Hreflang + Canonical -->
@@ -12,7 +12,7 @@
 <link rel="canonical" href="https://elevenmusic-avis.com/blog-2"/>
 <!-- Icons / CSS -->
 <link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
-<link href="images/favicon.ico" rel="icon" type="image/png"/>
+<link href="images/favicon.png" rel="icon" type="image/png"/>
 <link href="style.min.css" rel="stylesheet"/>
 <!-- Perf hints -->
 <link rel="preconnect" href="https://www.googletagmanager.com"/>
@@ -100,9 +100,11 @@
 <a href="/#prompts">Prompts</a>
 <a href="/blog">Blog</a>
 <a class="newsletter-btn" href="/#newsletter">Newsletter</a>
-<select aria-label="Sélecteur de langue" class="lang-select" onchange="if(this.value==='fr'){location.href='/blog-2';}else{location.href='/en/blog-2';}">
+<select aria-label="Sélecteur de langue" class="lang-select">
 <option selected="" value="fr">FR</option>
 <option value="en">EN</option>
+<option value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 <button aria-label="Menu" class="hamburger" id="hamburgerBtn">☰</button>
@@ -114,9 +116,11 @@
 <a href="/#prompts">Prompts</a>
 <a href="/blog">Blog</a>
 <a class="newsletter-btn" href="/#newsletter">Newsletter</a>
-<select aria-label="Sélecteur de langue mobile" class="lang-select" onchange="if(this.value==='fr'){location.href='/blog-2';}else{location.href='/en/blog-2';}">
+<select aria-label="Sélecteur de langue mobile" class="lang-select">
 <option selected="" value="fr">FR</option>
 <option value="en">EN</option>
+<option value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 </header>
@@ -155,7 +159,7 @@
 <div class="prompt-group">
 <h3>Trailer épique</h3>
 <code>"Musique de trailer cinéma épique avec orchestre puissant, chœur dramatique, percussions tribales et montée tension progressive, style Hans Zimmer/Two Steps From Hell"</code>
-<div class="blog-tip">Ajoutez "sans droits d'auteur" pour un usage commercial</div>
+<div class="blog-tip">Conseil : indiquez "usage commercial" et vérifiez les conditions d'utilisation.</div>
 </div>
 <div class="prompt-group">
 <h3>Ambiance mystérieuse</h3>
@@ -199,7 +203,7 @@
 </div>
 <div class="blog-faq">
 <div class="faq-item"><button>Comment accéder à cet article en anglais ?</button>
-<div class="faq-content">Utilisez le sélecteur de langue en haut à droite de la page pour accéder à la version anglaise de cet article.</div>
+<div class="faq-content">Utilisez le sélecteur de langue (EN/ES/DE) dans l'en-tête pour accéder à la version correspondante de cet article.</div>
 </div>
 </div>
 <div class="blog-cta">
@@ -242,47 +246,7 @@
 </footer>
 <!-- JS -->
 <script defer="" src="main.min.js"></script>
-<!-- Gestion RGPD : chargement GA4 uniquement après consentement -->
-<script>
-    (function() {
-      const banner = document.getElementById('cookie-banner');
-      const btnAccept = document.getElementById('cookie-accept');
-      const btnRefuse = document.getElementById('cookie-refuse');
+<!-- RGPD/GA4: gere dans main.js -->
 
-      function hideBanner(){ if(banner) banner.style.display='none'; }
-
-      function loadGA(){
-        if (document.getElementById('ga4-lib')) return;
-        const s = document.createElement('script');
-        s.async = true; s.id = 'ga4-lib';
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-FWXK1PDKDJ';
-        document.head.appendChild(s);
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        window.gtag = window.gtag || gtag;
-        gtag('js', new Date());
-        // Consent update (analytics autorisé)
-        gtag('consent', 'update', {
-          'analytics_storage': 'granted',
-          'functionality_storage': 'granted',
-          'security_storage': 'granted'
-        });
-        gtag('config', 'G-FWXK1PDKDJ', { 'anonymize_ip': true, 'allow_google_signals': false });
-      }
-
-      const saved = localStorage.getItem('cookie-consent'); // 'accepted' | 'refused'
-      if (saved === 'accepted') { loadGA(); hideBanner(); }
-      else if (saved === 'refused') { hideBanner(); }
-
-      if (btnAccept) btnAccept.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','accepted');
-        loadGA(); hideBanner();
-      });
-      if (btnRefuse) btnRefuse.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','refused');
-        hideBanner();
-      });
-    })();
-  </script>
 </body>
 </html>

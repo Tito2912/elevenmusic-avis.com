@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/><title>Blog ElevenMusic – Guides, tutoriels et astuces musique IA</title>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Blog ElevenMusic – Guides, tutoriels et astuces musique IA</title>
 <meta name="description" content="Blog ElevenMusic : tutoriels, prompts, astuces musique IA et guide affiliation ElevenLabs pour générer des chansons uniques."/>
 <meta name="robots" content="noindex, follow"/>
 <!-- Hreflang + Canonical -->
@@ -12,7 +12,7 @@
 <link rel="canonical" href="https://elevenmusic-avis.com/blog"/>
 <!-- Icons / CSS -->
 <link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
-<link href="images/favicon.ico" rel="icon" type="image/png"/>
+<link href="images/favicon.png" rel="icon" type="image/png"/>
 <link href="style.min.css" rel="stylesheet"/>
 <!-- Perf hints -->
 <link rel="preconnect" href="https://www.googletagmanager.com"/>
@@ -110,9 +110,11 @@
 <a href="/#prompts">Prompts</a>
 <a href="/blog">Blog</a>
 <a class="newsletter-btn" href="/#newsletter">Newsletter</a>
-<select aria-label="Sélecteur de langue" class="lang-select" onchange="if(this.value==='fr'){location.href='/blog';}else{location.href='/en/blog';}">
+<select aria-label="Sélecteur de langue" class="lang-select">
 <option selected="" value="fr">FR</option>
 <option value="en">EN</option>
+<option value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 <button aria-label="Ouvrir le menu" class="hamburger" id="hamburgerBtn">☰</button>
@@ -124,9 +126,11 @@
 <a href="/#prompts">Prompts</a>
 <a href="/blog">Blog</a>
 <a class="newsletter-btn" href="/#newsletter">Newsletter</a>
-<select aria-label="Sélecteur de langue mobile" class="lang-select" onchange="if(this.value==='fr'){location.href='/blog';}else{location.href='/en/blog';}">
+<select aria-label="Sélecteur de langue mobile" class="lang-select">
 <option selected="" value="fr">FR</option>
 <option value="en">EN</option>
+<option value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 </header>
@@ -218,7 +222,7 @@
 <div class="faq-content">Bien que centrées sur ElevenMusic, de nombreux concepts d'ingénierie de prompts et de création musicale s'appliquent également à d'autres plateformes de musique IA.</div>
 </div>
 <div class="faq-item"><button>Comment accéder à la version anglaise du blog ?</button>
-<div class="faq-content">Utilisez le sélecteur de langue en haut à droite de la page pour passer à la version anglaise du site.</div>
+<div class="faq-content">Utilisez le sélecteur de langue (FR/EN/ES/DE) dans l'en-tête pour passer à la version souhaitée.</div>
 </div>
 </div>
 </div>
@@ -250,46 +254,7 @@
 </footer>
 <!-- JS -->
 <script defer="" src="main.min.js"></script>
-<!-- Gestion RGPD : chargement GA4 seulement après consentement -->
-<script>
-    (function() {
-      const banner = document.getElementById('cookie-banner');
-      const btnAccept = document.getElementById('cookie-accept');
-      const btnRefuse = document.getElementById('cookie-refuse');
+<!-- RGPD/GA4: gere dans main.js -->
 
-      function hideBanner(){ if(banner) banner.style.display='none'; }
-
-      function loadGA(){
-        if (document.getElementById('ga4-lib')) return;
-        const s = document.createElement('script');
-        s.async = true; s.id = 'ga4-lib';
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-FWXK1PDKDJ';
-        document.head.appendChild(s);
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        window.gtag = window.gtag || gtag;
-        gtag('js', new Date());
-        gtag('consent', 'update', {
-          'analytics_storage': 'granted',
-          'functionality_storage': 'granted',
-          'security_storage': 'granted'
-        });
-        gtag('config', 'G-FWXK1PDKDJ', { 'anonymize_ip': true, 'allow_google_signals': false });
-      }
-
-      const saved = localStorage.getItem('cookie-consent'); // 'accepted' | 'refused'
-      if (saved === 'accepted') { loadGA(); hideBanner(); }
-      else if (saved === 'refused') { hideBanner(); }
-
-      if (btnAccept) btnAccept.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','accepted');
-        loadGA(); hideBanner();
-      });
-      if (btnRefuse) btnRefuse.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','refused');
-        hideBanner();
-      });
-    })();
-  </script>
 </body>
 </html>

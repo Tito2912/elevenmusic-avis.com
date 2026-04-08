@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/><title>Your first ElevenMusic AI track: step-by-step guide</title>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Your first ElevenMusic AI track: step-by-step guide</title>
 <meta name="description" content="Step-by-step tutorial to generate your first AI track with ElevenMusic: prompts, pro tips and concrete examples."/>
 <meta name="robots" content="index, follow"/>
 <!-- Hreflang + Canonical -->
@@ -102,9 +102,11 @@
 <a href="/en/#prompts">Prompts</a>
 <a href="/en/blog">Blog</a>
 <a class="newsletter-btn" href="/en/#newsletter">Newsletter</a>
-<select aria-label="Language selector" class="lang-select" onchange="if(this.value==='fr'){location.href='/blog-1';}else{location.href='/en/blog-1';}">
-<option selected="" value="en">EN</option>
+<select aria-label="Language selector" class="lang-select">
 <option value="fr">FR</option>
+<option selected="" value="en">EN</option>
+<option value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 <button aria-label="Menu" class="hamburger" id="hamburgerBtn">☰</button>
@@ -116,9 +118,11 @@
 <a href="/en/#prompts">Prompts</a>
 <a href="/en/blog">Blog</a>
 <a class="newsletter-btn" href="/en/#newsletter">Newsletter</a>
-<select aria-label="Language selector (mobile)" class="lang-select" onchange="if(this.value==='fr'){location.href='/blog-1';}else{location.href='/en/blog-1';}">
-<option selected="" value="en">EN</option>
+<select aria-label="Language selector (mobile)" class="lang-select">
 <option value="fr">FR</option>
+<option selected="" value="en">EN</option>
+<option value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 </header>
@@ -184,7 +188,7 @@
 <h3>Practical case: Music for YouTube</h3>
 <p>For a powerful YouTube intro:</p>
 <code>"Short dynamic intro with powerful beats and futuristic sound effects, 10 seconds, cyberpunk style"</code>
-<p>Instant result, royalty-free for your channel.</p>
+<p>Instant result, designed to reduce copyright-claim risk for your channel (subject to terms).</p>
 </div>
 <h2>Creation FAQ</h2>
 <div class="blog-faq">
@@ -234,61 +238,7 @@
 </footer>
 <!-- JS -->
 <script defer="" src="/main.min.js"></script>
-<!-- Article-specific script (kept) -->
-<script>
-    document.querySelectorAll('.copy-code').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const code = btn.previousElementSibling.textContent;
-        navigator.clipboard.writeText(code);
-        btn.textContent = 'Copied!';
-        setTimeout(() => btn.textContent = 'Copy', 2000);
-      });
-    });
-  </script>
-<!-- Consent handling: load GA4 only after explicit consent -->
-<script>
-    (function() {
-      const banner = document.getElementById('cookie-banner');
-      const btnAccept = document.getElementById('cookie-accept');
-      const btnRefuse = document.getElementById('cookie-refuse');
+<!-- RGPD/GA4: gere dans main.js -->
 
-      function hideBanner(){ if (banner) banner.style.display = 'none'; }
-
-      function loadGA(){
-        if (document.getElementById('ga4-lib')) return;
-        const s = document.createElement('script');
-        s.async = true; s.id = 'ga4-lib';
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-FWXK1PDKDJ';
-        document.head.appendChild(s);
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        window.gtag = window.gtag || gtag;
-
-        gtag('js', new Date());
-        // Update consent (analytics allowed)
-        gtag('consent', 'update', {
-          'analytics_storage': 'granted',
-          'functionality_storage': 'granted',
-          'security_storage': 'granted'
-        });
-        gtag('config', 'G-FWXK1PDKDJ', { 'anonymize_ip': true, 'allow_google_signals': false });
-      }
-
-      // Existing choice?
-      const saved = localStorage.getItem('cookie-consent'); // 'accepted' | 'refused'
-      if (saved === 'accepted') { loadGA(); hideBanner(); }
-      else if (saved === 'refused') { hideBanner(); }
-
-      if (btnAccept) btnAccept.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','accepted');
-        loadGA(); hideBanner();
-      });
-      if (btnRefuse) btnRefuse.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','refused');
-        hideBanner();
-      });
-    })();
-  </script>
 </body>
 </html>

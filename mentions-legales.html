@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/><title>Mentions légales – ElevenMusic Avis</title>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Mentions légales – ElevenMusic Avis</title>
 <meta name="description" content="Mentions légales ElevenMusic-avis.com : éditeur, hébergeur, propriété intellectuelle, données personnelles et cookies (RGPD)."/>
 <meta name="robots" content="index, follow"/>
 <meta name="google" content="notranslate"/>
@@ -13,7 +13,7 @@
 <link rel="canonical" href="https://elevenmusic-avis.com/mentions-legales"/>
 <!-- Icons / CSS -->
 <link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
-<link href="images/favicon.ico" rel="icon" type="image/png"/>
+<link href="images/favicon.png" rel="icon" type="image/png"/>
 <link href="style.min.css" rel="stylesheet"/>
 <!-- Perf hints -->
 <link rel="preconnect" href="https://www.googletagmanager.com"/>
@@ -72,9 +72,11 @@
 <a class="newsletter-btn" href="/#newsletter">Newsletter</a>
 <a class="active" href="/mentions-legales">Mentions légales</a>
 <a href="/politique-de-confidentialite">Confidentialité</a>
-<select aria-label="Sélecteur de langue" class="lang-select" onchange="if(this.value==='fr'){location.href='/mentions-legales';}else{location.href='/en/legal-notice';}">
+<select aria-label="Sélecteur de langue" class="lang-select">
 <option selected="" value="fr">FR</option>
 <option value="en">EN</option>
+<option value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 <button aria-label="Ouvrir le menu" class="hamburger" id="hamburgerBtn">☰</button>
@@ -88,9 +90,11 @@
 <a class="newsletter-btn" href="/#newsletter">Newsletter</a>
 <a class="active" href="/mentions-legales">Mentions légales</a>
 <a href="/politique-de-confidentialite">Confidentialité</a>
-<select aria-label="Sélecteur de langue mobile" class="lang-select" onchange="if(this.value==='fr'){location.href='/mentions-legales';}else{location.href='/en/legal-notice';}">
+<select aria-label="Sélecteur de langue mobile" class="lang-select">
 <option selected="" value="fr">FR</option>
 <option value="en">EN</option>
+<option value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 </header>
@@ -172,46 +176,7 @@
 </footer>
 <!-- JS -->
 <script defer="" src="main.min.js"></script>
-<!-- Gestion RGPD : chargement GA4 uniquement après consentement -->
-<script>
-    (function() {
-      const banner = document.getElementById('cookie-banner');
-      const btnAccept = document.getElementById('cookie-accept');
-      const btnRefuse = document.getElementById('cookie-refuse');
+<!-- RGPD/GA4: gere dans main.js -->
 
-      function hideBanner(){ if(banner) banner.style.display='none'; }
-
-      function loadGA(){
-        if (document.getElementById('ga4-lib')) return;
-        const s = document.createElement('script');
-        s.async = true; s.id = 'ga4-lib';
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-FWXK1PDKDJ';
-        document.head.appendChild(s);
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        window.gtag = window.gtag || gtag;
-        gtag('js', new Date());
-        gtag('consent', 'update', {
-          'analytics_storage': 'granted',
-          'functionality_storage': 'granted',
-          'security_storage': 'granted'
-        });
-        gtag('config', 'G-FWXK1PDKDJ', { 'anonymize_ip': true, 'allow_google_signals': false });
-      }
-
-      const saved = localStorage.getItem('cookie-consent'); // 'accepted' | 'refused'
-      if (saved === 'accepted') { loadGA(); hideBanner(); }
-      else if (saved === 'refused') { hideBanner(); }
-
-      if (btnAccept) btnAccept.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','accepted');
-        loadGA(); hideBanner();
-      });
-      if (btnRefuse) btnRefuse.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','refused');
-        hideBanner();
-      });
-    })();
-  </script>
 </body>
 </html>

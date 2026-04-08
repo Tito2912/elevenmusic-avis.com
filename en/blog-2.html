@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/><title>Best ElevenMusic prompts for unique AI songs | Real examples</title>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Best ElevenMusic prompts for unique AI songs | Real examples</title>
 <meta name="description" content="Selection of tested prompts for ElevenMusic: pop, rap, cinematic… with tips for professional results."/>
 <meta name="robots" content="index, follow"/>
 <!-- Hreflang + Canonical -->
@@ -100,9 +100,11 @@
 <a href="/en/#prompts">Prompts</a>
 <a href="/en/blog">Blog</a>
 <a class="newsletter-btn" href="/en/#newsletter">Newsletter</a>
-<select aria-label="Language selector" class="lang-select" onchange="if(this.value==='fr'){location.href='/blog-2';}else{location.href='/en/blog-2';}">
-<option selected="" value="en">EN</option>
+<select aria-label="Language selector" class="lang-select">
 <option value="fr">FR</option>
+<option selected="" value="en">EN</option>
+<option value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 <button aria-label="Menu" class="hamburger" id="hamburgerBtn">☰</button>
@@ -114,9 +116,11 @@
 <a href="/en/#prompts">Prompts</a>
 <a href="/en/blog">Blog</a>
 <a class="newsletter-btn" href="/en/#newsletter">Newsletter</a>
-<select aria-label="Mobile language selector" class="lang-select" onchange="if(this.value==='fr'){location.href='/blog-2';}else{location.href='/en/blog-2';}">
-<option selected="" value="en">EN</option>
+<select aria-label="Mobile language selector" class="lang-select">
 <option value="fr">FR</option>
+<option selected="" value="en">EN</option>
+<option value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 </header>
@@ -155,7 +159,7 @@
 <div class="prompt-group">
 <h3>Epic Trailer</h3>
 <code>"Epic cinema trailer music with powerful orchestra, dramatic choir, tribal percussion and progressive tension build-up, Hans Zimmer/Two Steps From Hell style"</code>
-<div class="blog-tip">Add "royalty-free" for commercial use</div>
+<div class="blog-tip">Tip: mention "commercial use" and follow the platform's terms.</div>
 </div>
 <div class="prompt-group">
 <h3>Mysterious Atmosphere</h3>
@@ -237,50 +241,7 @@
 </footer>
 <!-- JS -->
 <script defer="" src="/main.min.js"></script>
-<!-- Consent handling: load GA4 only after explicit consent -->
-<script>
-    (function() {
-      const banner = document.getElementById('cookie-banner');
-      const btnAccept = document.getElementById('cookie-accept');
-      const btnRefuse = document.getElementById('cookie-refuse');
+<!-- RGPD/GA4: gere dans main.js -->
 
-      function hideBanner(){ if (banner) banner.style.display = 'none'; }
-
-      function loadGA(){
-        if (document.getElementById('ga4-lib')) return;
-        const s = document.createElement('script');
-        s.async = true; s.id = 'ga4-lib';
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-FWXK1PDKDJ';
-        document.head.appendChild(s);
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        window.gtag = window.gtag || gtag;
-
-        gtag('js', new Date());
-        // Update consent (analytics allowed)
-        gtag('consent', 'update', {
-          'analytics_storage': 'granted',
-          'functionality_storage': 'granted',
-          'security_storage': 'granted'
-        });
-        gtag('config', 'G-FWXK1PDKDJ', { 'anonymize_ip': true, 'allow_google_signals': false });
-      }
-
-      // Existing choice?
-      const saved = localStorage.getItem('cookie-consent'); // 'accepted' | 'refused'
-      if (saved === 'accepted') { loadGA(); hideBanner(); }
-      else if (saved === 'refused') { hideBanner(); }
-
-      if (btnAccept) btnAccept.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','accepted');
-        loadGA(); hideBanner();
-      });
-      if (btnRefuse) btnRefuse.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','refused');
-        hideBanner();
-      });
-    })();
-  </script>
 </body>
 </html>

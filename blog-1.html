@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/><title>Guide ElevenMusic IA : ta première musique pas à pas</title>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Guide ElevenMusic IA : ta première musique pas à pas</title>
 <meta name="description" content="Tutoriel pas à pas pour générer ta première track IA avec ElevenMusic : prompts, astuces pro et exemples concrets."/>
 <meta name="robots" content="index, follow"/>
 <!-- Hreflang + Canonical -->
@@ -12,7 +12,7 @@
 <link rel="canonical" href="https://elevenmusic-avis.com/blog-1"/>
 <!-- Icons / CSS -->
 <link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
-<link href="images/favicon.ico" rel="icon" type="image/png"/>
+<link href="images/favicon.png" rel="icon" type="image/png"/>
 <link href="style.min.css" rel="stylesheet"/>
 <!-- Perf hints -->
 <link rel="preconnect" href="https://www.googletagmanager.com"/>
@@ -47,7 +47,37 @@
       'functionality_storage': 'granted',
       'security_storage': 'granted'
     });
-  </script></head>
+  </script><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Créer sa première musique avec ElevenMusic IA (guide complet)",
+  "description": "Tutoriel pas à pas pour générer ta première track IA avec ElevenMusic : prompts, astuces pro et exemples concrets.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://elevenmusic-avis.com/images/og-elevenmusic.jpg",
+    "width": "1200",
+    "height": "630"
+  },
+  "datePublished": "2025-03-15T08:00:00+00:00",
+  "dateModified": "2025-03-15T08:00:00+00:00",
+  "author": {
+    "@type": "Organization",
+    "name": "ElevenMusic-avis.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ElevenMusic-avis.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://elevenmusic-avis.com/images/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://elevenmusic-avis.com/blog-1"
+  },
+  "inLanguage": "fr-FR"
+}</script></head>
 <body class="hero-merged">
 <!-- Bannière cookies -->
 <div aria-label="Bannière cookies" class="cookie-banner" id="cookie-banner" role="region">
@@ -71,9 +101,11 @@
 <a href="/#prompts">Prompts</a>
 <a href="/blog">Blog</a>
 <a class="newsletter-btn" href="/#newsletter">Newsletter</a>
-<select aria-label="Sélecteur de langue" class="lang-select" onchange="if(this.value==='fr'){location.href='/blog-1';}else{location.href='/en/blog-1';}">
+<select aria-label="Sélecteur de langue" class="lang-select">
 <option selected="" value="fr">FR</option>
 <option value="en">EN</option>
+<option value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 <button aria-label="Ouvrir le menu" class="hamburger" id="hamburgerBtn">☰</button>
@@ -85,9 +117,11 @@
 <a href="/#prompts">Prompts</a>
 <a href="/blog">Blog</a>
 <a class="newsletter-btn" href="/#newsletter">Newsletter</a>
-<select aria-label="Sélecteur de langue mobile" class="lang-select" onchange="if(this.value==='fr'){location.href='/blog-1';}else{location.href='/en/blog-1';}">
+<select aria-label="Sélecteur de langue mobile" class="lang-select">
 <option selected="" value="fr">FR</option>
 <option value="en">EN</option>
+<option value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 </header>
@@ -156,7 +190,7 @@
 <h3>Cas pratique : Musique pour YouTube</h3>
 <p>Pour un intro YouTube percutante :</p>
 <code>"Intro courte et dynamique avec des beats puissants et des effets sonores futuristes, 10 secondes, style cyberpunk"</code>
-<p>Résultat instantané, libre de droits pour votre chaîne.</p>
+<p>Résultat instantané, pensé pour réduire le risque de revendication (selon conditions).</p>
 </div>
 <h2>FAQ Création</h2>
 <div class="blog-faq">
@@ -206,58 +240,7 @@
 </footer>
 <!-- JS -->
 <script defer="" src="main.min.js"></script>
-<!-- Script spécifique à l'article -->
-<script>
-    document.querySelectorAll('.copy-code').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const code = btn.previousElementSibling.textContent;
-        navigator.clipboard.writeText(code);
-        btn.textContent = 'Copié !';
-        setTimeout(() => btn.textContent = 'Copier', 2000);
-      });
-    });
-  </script>
-<!-- Gestion RGPD : chargement GA4 uniquement après consentement -->
-<script>
-    (function() {
-      const banner = document.getElementById('cookie-banner');
-      const btnAccept = document.getElementById('cookie-accept');
-      const btnRefuse = document.getElementById('cookie-refuse');
+<!-- RGPD/GA4: gere dans main.js -->
 
-      function hideBanner(){ if(banner) banner.style.display='none'; }
-
-      function loadGA(){
-        if (document.getElementById('ga4-lib')) return;
-        const s = document.createElement('script');
-        s.async = true; s.id = 'ga4-lib';
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-FWXK1PDKDJ';
-        document.head.appendChild(s);
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        window.gtag = window.gtag || gtag;
-        gtag('js', new Date());
-        // Consent update (analytics autorisé)
-        gtag('consent', 'update', {
-          'analytics_storage': 'granted',
-          'functionality_storage': 'granted',
-          'security_storage': 'granted'
-        });
-        gtag('config', 'G-FWXK1PDKDJ', { 'anonymize_ip': true, 'allow_google_signals': false });
-      }
-
-      const saved = localStorage.getItem('cookie-consent'); // 'accepted' | 'refused'
-      if (saved === 'accepted') { loadGA(); hideBanner(); }
-      else if (saved === 'refused') { hideBanner(); }
-
-      if (btnAccept) btnAccept.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','accepted');
-        loadGA(); hideBanner();
-      });
-      if (btnRefuse) btnRefuse.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','refused');
-        hideBanner();
-      });
-    })();
-  </script>
 </body>
 </html>

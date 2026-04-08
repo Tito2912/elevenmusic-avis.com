@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/><title>ElevenMusic Review | Pricing, AI Music and Prompt Guide</title>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>ElevenMusic Review | Pricing, AI Music and Prompt Guide</title>
 <meta name="description" content="ElevenMusic review and pricing: prompts and tips to generate AI music, plus ElevenLabs Image &amp; Video (Beta) tools for visuals and clips."/>
 <meta name="robots" content="index, follow"/>
 <!-- Hreflang + Canonical -->
@@ -103,9 +103,11 @@
 <a href="#prompts">Prompts</a>
 <a href="/en/blog">Blog</a>
 <a class="newsletter-btn" href="#newsletter">Newsletter</a>
-<select aria-label="Language selector" class="lang-select" onchange="if(this.value==='fr'){location.href='/';}else{location.href='/en/';}">
-<option selected="" value="en">EN</option>
+<select aria-label="Language selector" class="lang-select">
 <option value="fr">FR</option>
+<option selected="" value="en">EN</option>
+<option value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 <button aria-label="Open menu" class="hamburger" id="hamburgerBtn">☰</button>
@@ -117,9 +119,11 @@
 <a href="#prompts">Prompts</a>
 <a href="/en/blog">Blog</a>
 <a class="newsletter-btn" href="#newsletter">Newsletter</a>
-<select aria-label="Mobile language selector" class="lang-select" onchange="if(this.value==='fr'){location.href='/';}else{location.href='/en/';}">
-<option selected="" value="en">EN</option>
+<select aria-label="Mobile language selector" class="lang-select">
 <option value="fr">FR</option>
+<option selected="" value="en">EN</option>
+<option value="es">ES</option>
+<option value="de">DE</option>
 </select>
 </nav>
 </header>
@@ -129,7 +133,7 @@
 <section class="hero" id="hero">
 <!-- ElevenMusic Compilation background video -->
 <video autoplay="" class="hero-bg-video" id="hero-bg-video" loop="" muted="" playsinline="" poster="/images/hero-poster.jpg" preload="metadata">
-<source src="../videos/eleven-music-compilation.mp4" type="video/mp4">
+<source src="../videos/eleven-music-logo.mp4" type="video/mp4">
 </video>
 <div class="hero-bg-overlay"></div>
 <div class="container hero-content">
@@ -151,7 +155,7 @@
 <div class="audio-tooltip" id="audioTooltip">Enable sound</div>
 </div>
 <ul class="hero-points">
-<li>🔊 Professional quality, no copyright infringement</li>
+<li>🔊 Professional quality, designed to reduce copyright-claim risk</li>
 <li>🚀 Instant generation, multi-genre, multi-language</li>
 <li>🎧 Compatible with streaming, video, podcast &amp; more</li>
 <li>🖼️ New for 2025: ElevenLabs Image &amp; Video (Beta)</li>
@@ -173,7 +177,7 @@
 <div class="feature-card">
 <img alt="Original AI music" class="feature-icon" decoding="async" height="64" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/727/727245.png" width="64"/>
 <h3>Original music</h3>
-<p>Generate unique tracks without copyright issues.</p>
+<p>Generate original tracks designed to reduce copyright-claim risk.</p>
 </div>
 <div class="feature-card">
 <img alt="Full customization AI" class="feature-icon" decoding="async" height="64" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/126/126472.png" width="64"/>
@@ -339,7 +343,7 @@
 <div class="faq-content">22% on each ElevenLabs payment (11% on Business plan), 90-day cookie, PartnerStack payment from $5.</div>
 </div>
 <div class="faq-item"><button>Is the music really royalty-free?</button>
-<div class="faq-content">Yes, original tracks, zero copyright strikes, for commercial and personal use. Merlin/Kobalt deals cover legality.</div>
+<div class="faq-content">ElevenLabs mentions agreements with rights holders (e.g., Merlin, Kobalt). This can reduce claim risk, but it's not a 0-strike guarantee. For commercial use, follow their terms.</div>
 </div>
 <div class="faq-item"><button>Which genres or languages are supported?</button>
 <div class="faq-content">All: pop, rap, rock, cinematic, electro, orchestral… Text in EN, FR, Spanish… even with AI vocals!</div>
@@ -390,50 +394,7 @@
 </footer>
 <!-- JS -->
 <script defer="" src="/main.min.js"></script>
-<!-- RGPD/Consent: load GA4 only after consent -->
-<script>
-    (function() {
-      const banner = document.getElementById('cookie-banner');
-      const btnAccept = document.getElementById('cookie-accept');
-      const btnRefuse = document.getElementById('cookie-refuse');
+<!-- RGPD/GA4: gere dans main.js -->
 
-      function hideBanner(){ if (banner) banner.style.display = 'none'; }
-
-      function loadGA(){
-        if (document.getElementById('ga4-lib')) return;
-        const s = document.createElement('script');
-        s.async = true; s.id = 'ga4-lib';
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-FWXK1PDKDJ';
-        document.head.appendChild(s);
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        window.gtag = window.gtag || gtag;
-
-        gtag('js', new Date());
-        // Update consent (analytics allowed)
-        gtag('consent', 'update', {
-          'analytics_storage': 'granted',
-          'functionality_storage': 'granted',
-          'security_storage': 'granted'
-        });
-        gtag('config', 'G-FWXK1PDKDJ', { 'anonymize_ip': true, 'allow_google_signals': false });
-      }
-
-      // Existing state?
-      const saved = localStorage.getItem('cookie-consent'); // 'accepted' | 'refused'
-      if (saved === 'accepted') { loadGA(); hideBanner(); }
-      else if (saved === 'refused') { hideBanner(); }
-
-      if (btnAccept) btnAccept.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','accepted');
-        loadGA(); hideBanner();
-      });
-      if (btnRefuse) btnRefuse.addEventListener('click', function(){
-        localStorage.setItem('cookie-consent','refused');
-        hideBanner();
-      });
-    })();
-  </script>
 </body>
 </html>

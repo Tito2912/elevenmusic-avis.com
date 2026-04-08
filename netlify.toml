@@ -1,5 +1,6 @@
 [build]
   publish = "."
+  command = "node scripts/ping-indexnow.cjs"
 
 [build.environment]
   NODE_VERSION = "18"
@@ -44,6 +45,8 @@
       form-action 'self';
       upgrade-insecure-requests;
     '''
+    # Cache HTML par défaut (inclut les URLs sans extension : /, /blog, /en/, etc.)
+    Cache-Control = "public, max-age=300, must-revalidate"
     # Langue par défaut (FR) — surchargée plus bas pour /en/*
     Content-Language = "fr"
 
@@ -52,6 +55,18 @@
   for = "/en/*"
   [headers.values]
     Content-Language = "en"
+
+# Déclare explicitement la langue des pages ES
+[[headers]]
+  for = "/es/*"
+  [headers.values]
+    Content-Language = "es"
+
+# Déclare explicitement la langue des pages DE
+[[headers]]
+  for = "/de/*"
+  [headers.values]
+    Content-Language = "de"
 
 # ==================================
 # X-Robots-Tag pour pages légales/RGPD
@@ -79,12 +94,6 @@
 # =========================
 # Caching (Core Web Vitals)
 # =========================
-# HTML : court (évite le contenu périmé)
-[[headers]]
-  for = "/*.html"
-  [headers.values]
-    Cache-Control = "public, max-age=300, must-revalidate"
-
 # Assets versionnés : cache long
 [[headers]]
   for = "*.css"
@@ -112,6 +121,11 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
+  for = "*.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
   for = "*.svg"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
@@ -135,3 +149,18 @@
   for = "*.mp3"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# =========================
+# Cache overrides (no-hash)
+# =========================
+# main.min.js / style.min.css ne sont pas fingerprintés.
+# Evite que les visiteurs gardent une ancienne version pendant 1 an.
+[[headers]]
+  for = "/main.min.js"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+
+[[headers]]
+  for = "/style.min.css"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"

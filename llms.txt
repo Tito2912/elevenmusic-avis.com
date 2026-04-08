@@ -12,9 +12,9 @@ Ce site presente des avis et contenus autour d'Eleven Music. Utilisez les liens 
 ## Contenus principaux
 
 - [Accueil](https://elevenmusic-avis.com/)
-- [Blog](https://elevenmusic-avis.com/blog.html)
-- [Mentions legales](https://elevenmusic-avis.com/mentions-legales.html)
-- [Politique de confidentialite](https://elevenmusic-avis.com/politique-de-confidentialite.html)
+- [Blog](https://elevenmusic-avis.com/blog)
+- [Mentions legales](https://elevenmusic-avis.com/mentions-legales)
+- [Politique de confidentialite](https://elevenmusic-avis.com/politique-de-confidentialite)
 
 ## Optional
 

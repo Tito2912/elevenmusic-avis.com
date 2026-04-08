@@ -5,110 +5,165 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
-  <!-- Accueil FR -->
   <url>
     <loc>https://elevenmusic-avis.com/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/"/>
     <image:image>
       <image:loc>https://elevenmusic-avis.com/images/og-elevenmusic.jpg</image:loc>
-      <image:title>ElevenMusic – IA Musique</image:title>
+      <image:title>ElevenMusic - IA Musique</image:title>
     </image:image>
-  
-    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/"/>
-</url>
+  </url>
 
-  <!-- Accueil EN -->
   <url>
     <loc>https://elevenmusic-avis.com/en/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/"/>
     <image:image>
       <image:loc>https://elevenmusic-avis.com/images/og-elevenmusic.jpg</image:loc>
-      <image:title>ElevenMusic – AI Music</image:title>
+      <image:title>ElevenMusic - AI Music</image:title>
     </image:image>
-  
+  </url>
+
+  <url>
+    <loc>https://elevenmusic-avis.com/es/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/"/>
-</url>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/"/>
+    <image:image>
+      <image:loc>https://elevenmusic-avis.com/images/og-elevenmusic.jpg</image:loc>
+      <image:title>ElevenMusic - Música con IA</image:title>
+    </image:image>
+  </url>
 
-  <!-- Blog FR 1 -->
+  <url>
+    <loc>https://elevenmusic-avis.com/de/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/"/>
+    <image:image>
+      <image:loc>https://elevenmusic-avis.com/images/og-elevenmusic.jpg</image:loc>
+      <image:title>ElevenMusic - KI-Musik</image:title>
+    </image:image>
+  </url>
+
   <url>
     <loc>https://elevenmusic-avis.com/blog-1</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/blog-1"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/blog-1"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/blog-1"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/blog-1"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/blog-1"/>
     <image:image>
       <image:loc>https://elevenmusic-avis.com/images/blog-1-hero.png</image:loc>
-      <image:title>Créer sa première musique avec ElevenMusic</image:title>
+      <image:title>Creer sa premiere musique avec ElevenMusic</image:title>
     </image:image>
-  
-    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/blog-1"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/blog-1"/>
-</url>
+  </url>
 
-  <!-- Blog EN 1 -->
   <url>
     <loc>https://elevenmusic-avis.com/en/blog-1</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/blog-1"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/blog-1"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/blog-1"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/blog-1"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/blog-1"/>
     <image:image>
       <image:loc>https://elevenmusic-avis.com/images/blog-1-hero.png</image:loc>
       <image:title>Create your first music with ElevenMusic</image:title>
     </image:image>
-  
+  </url>
+
+  <url>
+    <loc>https://elevenmusic-avis.com/es/blog-1</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/blog-1"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/blog-1"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/blog-1"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/blog-1"/>
-</url>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/blog-1"/>
+    <image:image>
+      <image:loc>https://elevenmusic-avis.com/images/blog-1-hero.png</image:loc>
+      <image:title>Crea tu primera música con ElevenMusic</image:title>
+    </image:image>
+  </url>
 
-  <!-- Blog FR 2 -->
+  <url>
+    <loc>https://elevenmusic-avis.com/de/blog-1</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/blog-1"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/blog-1"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/blog-1"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/blog-1"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/blog-1"/>
+    <image:image>
+      <image:loc>https://elevenmusic-avis.com/images/blog-1-hero.png</image:loc>
+      <image:title>Erstelle deine erste Musik mit ElevenMusic</image:title>
+    </image:image>
+  </url>
+
   <url>
     <loc>https://elevenmusic-avis.com/blog-2</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/blog-2"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/blog-2"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/blog-2"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/blog-2"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/blog-2"/>
     <image:image>
       <image:loc>https://elevenmusic-avis.com/images/og-elevenmusic.jpg</image:loc>
-      <image:title>Prompts musique IA – Exemples</image:title>
+      <image:title>Prompts musique IA - Exemples</image:title>
     </image:image>
     <video:video>
       <video:thumbnail_loc>https://elevenmusic-avis.com/images/og-elevenmusic.jpg</video:thumbnail_loc>
       <video:title>Les meilleurs prompts pour des musiques IA uniques</video:title>
-      <video:description>Exemples de prompts optimisés pour ElevenMusic (pop, rap, ciné).</video:description>
+      <video:description>Exemples de prompts optimises pour ElevenMusic (pop, rap, cine).</video:description>
       <video:content_loc>https://elevenmusic-avis.com/videos/eleven-music-logo.mp4</video:content_loc>
     </video:video>
-  
-    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/blog-2"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/blog-2"/>
-</url>
+  </url>
 
-  <!-- Blog EN 2 -->
   <url>
     <loc>https://elevenmusic-avis.com/en/blog-2</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/blog-2"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/blog-2"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/blog-2"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/blog-2"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/blog-2"/>
     <image:image>
       <image:loc>https://elevenmusic-avis.com/images/og-elevenmusic.jpg</image:loc>
@@ -120,100 +175,146 @@
       <video:description>Tested prompts for ElevenMusic across genres with pro tips.</video:description>
       <video:content_loc>https://elevenmusic-avis.com/videos/eleven-music-logo.mp4</video:content_loc>
     </video:video>
-  
+  </url>
+
+  <url>
+    <loc>https://elevenmusic-avis.com/es/blog-2</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/blog-2"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/blog-2"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/blog-2"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/blog-2"/>
-</url>
-
-  <!-- Blog Hub FR -->
-  <url>
-    <loc>https://elevenmusic-avis.com/blog</loc>
-    <lastmod>2025-09-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/blog"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/blog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/blog-2"/>
     <image:image>
       <image:loc>https://elevenmusic-avis.com/images/og-elevenmusic.jpg</image:loc>
-      <image:title>Blog ElevenMusic – Guides &amp; tutoriels</image:title>
+      <image:title>Mejores prompts para música con IA</image:title>
     </image:image>
-  
-    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/blog"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/blog"/>
-</url>
+    <video:video>
+      <video:thumbnail_loc>https://elevenmusic-avis.com/images/og-elevenmusic.jpg</video:thumbnail_loc>
+      <video:title>Los mejores prompts para música con IA única</video:title>
+      <video:description>Ejemplos de prompts probados para ElevenMusic por género.</video:description>
+      <video:content_loc>https://elevenmusic-avis.com/videos/eleven-music-logo.mp4</video:content_loc>
+    </video:video>
+  </url>
 
-  <!-- Blog Hub EN -->
   <url>
-    <loc>https://elevenmusic-avis.com/en/blog</loc>
-    <lastmod>2025-09-01</lastmod>
+    <loc>https://elevenmusic-avis.com/de/blog-2</loc>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/blog"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/blog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/blog"/>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/blog-2"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/blog-2"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/blog-2"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/blog-2"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/blog-2"/>
     <image:image>
       <image:loc>https://elevenmusic-avis.com/images/og-elevenmusic.jpg</image:loc>
-      <image:title>ElevenMusic Blog – Guides &amp; Tutorials</image:title>
+      <image:title>Beste Prompts für KI-Musik</image:title>
     </image:image>
-  
-    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/blog"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/blog"/>
-</url>
+    <video:video>
+      <video:thumbnail_loc>https://elevenmusic-avis.com/images/og-elevenmusic.jpg</video:thumbnail_loc>
+      <video:title>Die besten Prompts für einzigartige KI-Musik</video:title>
+      <video:description>Getestete Prompts für ElevenMusic nach Genres mit Profi-Tipps.</video:description>
+      <video:content_loc>https://elevenmusic-avis.com/videos/eleven-music-logo.mp4</video:content_loc>
+    </video:video>
+  </url>
 
-  <!-- Mentions légales FR -->
   <url>
     <loc>https://elevenmusic-avis.com/mentions-legales</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/mentions-legales"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/legal-notice"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/mentions-legales"/>
-  
     <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/legal-notice"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/legal-notice"/>
-</url>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/mentions-legales"/>
+  </url>
 
-  <!-- Legal Notice EN -->
   <url>
     <loc>https://elevenmusic-avis.com/en/legal-notice</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/mentions-legales"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/legal-notice"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/mentions-legales"/>
-  
     <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/legal-notice"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/legal-notice"/>
-</url>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/mentions-legales"/>
+  </url>
 
-  <!-- Politique de confidentialité FR -->
+  <url>
+    <loc>https://elevenmusic-avis.com/es/legal-notice</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/mentions-legales"/>
+  </url>
+
+  <url>
+    <loc>https://elevenmusic-avis.com/de/legal-notice</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/mentions-legales"/>
+  </url>
+
   <url>
     <loc>https://elevenmusic-avis.com/politique-de-confidentialite</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/politique-de-confidentialite"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/privacy-policy"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/politique-de-confidentialite"/>
-  
     <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/privacy-policy"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/privacy-policy"/>
-</url>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/politique-de-confidentialite"/>
+  </url>
 
-  <!-- Privacy Policy EN -->
   <url>
     <loc>https://elevenmusic-avis.com/en/privacy-policy</loc>
-    <lastmod>2025-09-01</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/politique-de-confidentialite"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/privacy-policy"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/politique-de-confidentialite"/>
-  
     <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/privacy-policy"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/privacy-policy"/>
-</url>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/politique-de-confidentialite"/>
+  </url>
+
+  <url>
+    <loc>https://elevenmusic-avis.com/es/privacy-policy</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/politique-de-confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/politique-de-confidentialite"/>
+  </url>
+
+  <url>
+    <loc>https://elevenmusic-avis.com/de/privacy-policy</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elevenmusic-avis.com/politique-de-confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elevenmusic-avis.com/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elevenmusic-avis.com/es/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://elevenmusic-avis.com/de/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elevenmusic-avis.com/politique-de-confidentialite"/>
+  </url>
+
 </urlset>
