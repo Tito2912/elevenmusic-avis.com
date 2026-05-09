@@ -76,7 +76,7 @@
       'functionality_storage': 'granted',
       'security_storage': 'granted'
     });
-  </script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Comment accéder à cet article en anglais ?","acceptedAnswer":{"@type":"Answer","text":"Utilisez le sélecteur de langue (EN/ES/DE) dans l'en-tête pour accéder à la version correspondante de cet article."}}]}</script></head>
+  </script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Combien de mots doit contenir un bon prompt ElevenMusic ?","acceptedAnswer":{"@type":"Answer","text":"Entre 20 et 60 mots est la zone optimale. Moins de 10 mots = résultat vague. Plus de 80 mots = certains éléments ignorés."}},{"@type":"Question","name":"Peut-on utiliser le nom d'un artiste célèbre dans un prompt ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les références stylistiques (\"style Daft Punk\") sont autorisées et très efficaces pour orienter le style sonore."}},{"@type":"Question","name":"Comment accéder à cet article en anglais ?","acceptedAnswer":{"@type":"Answer","text":"Utilisez le sélecteur de langue (EN/ES/DE) dans l'en-tête pour accéder à la version correspondante de cet article."}}]}</script></head>
 <body class="hero-merged">
 <!-- Bannière cookies -->
 <div aria-label="Bannière cookies" class="cookie-banner" id="cookie-banner" role="region">
@@ -135,14 +135,30 @@
 <figure class="blog-hero">
 <video autoplay="" class="blog-hero-video" loop="" muted="" playsinline="" poster="images/og-elevenmusic.jpg" preload="metadata">
 <source src="videos/eleven-music-logo.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la lecture vidéo.
-          </video>
+Votre navigateur ne supporte pas la lecture vidéo.
+</video>
 <figcaption>Exemples de prompts optimisés pour ElevenMusic</figcaption>
 </figure>
-<p>La qualité de votre musique IA dépend crucialement de votre prompt. Voici une sélection de formulations testées, classées par genre, avec des astuces pour des résultats professionnels.</p>
-<h2>1. Prompts Pop/Électro</h2>
+
+<p>La qualité de votre musique IA dépend à 80 % de votre prompt. Un prompt vague produit une musique générique ; un prompt bien construit produit exactement ce que vous imaginez. Ce guide vous donne une bibliothèque complète de prompts testés, classés par genre, avec les techniques avancées pour aller encore plus loin.</p>
+
+<h2>L'anatomie d'un prompt ElevenMusic efficace</h2>
+<p>Avant la liste de prompts, voici la formule qui fonctionne systématiquement :</p>
+<div class="code-block">
+<code>[Genre principal] + [Instruments clés] + [Ambiance/Émotion] + [Tempo BPM] + [Structure optionnelle] + [Références stylistiques] + [Durée]</code>
+<button class="copy-code">Copier la formule</button>
+</div>
+<p>Plus vous renseignez d'éléments, plus le résultat est maîtrisé. Voici les niveaux de précision :</p>
+<table class="blog-table">
+<tr><th>Niveau de prompt</th><th>Exemple</th><th>Résultat attendu</th></tr>
+<tr><td>Minimal</td><td>"Musique triste"</td><td>Générique, peu d'émotion</td></tr>
+<tr><td>Intermédiaire</td><td>"Ballade piano mélancolique, tempo 60 BPM"</td><td>Correct mais prévisible</td></tr>
+<tr><td>Expert</td><td>"Ballade piano mélancolique avec cordes légères et pluie en fond, tempo 60 BPM, inspiration Ludovico Einaudi, 3 minutes"</td><td>Profondeur émotionnelle, qualité cinématique</td></tr>
+</table>
+
+<h2>1. Prompts Pop / Électro</h2>
 <div class="prompt-group">
-<h3>Pop énergique (parfaite pour TikTok)</h3>
+<h3>Pop énergique (parfaite pour TikTok / Reels)</h3>
 <code>"Chanson pop entraînante avec refrain accrocheur, voix féminine aérienne, synthés lumineux et basse punchy, tempo 128 BPM, paroles en anglais sur l'été et la liberté"</code>
 <audio class="blog-audio" controls="" preload="none">
 <source src="audios/Summer-Wings.mp3" type="audio/mp3">
@@ -155,17 +171,35 @@
 <source src="audios/Neon-Circuit.mp3" type="audio/mp3">
 </audio>
 </div>
+<div class="prompt-group">
+<h3>Électro house pour intro de podcast</h3>
+<code>"Intro électro house courte et dynamique, build-up 4 mesures puis drop puissant, synthés larges et kick 4/4, 30 secondes, énergie positive"</code>
+</div>
+<div class="prompt-group">
+<h3>Pop introspective (parfaite pour vlogs)</h3>
+<code>"Pop acoustique douce avec guitare fingerpicking et voix féminine douce, ambiance coffee shop, tempo 90 BPM, sans paroles, 2 minutes"</code>
+</div>
+
 <h2>2. Prompts Cinématiques</h2>
 <div class="prompt-group">
 <h3>Trailer épique</h3>
-<code>"Musique de trailer cinéma épique avec orchestre puissant, chœur dramatique, percussions tribales et montée tension progressive, style Hans Zimmer/Two Steps From Hell"</code>
-<div class="blog-tip">Conseil : indiquez "usage commercial" et vérifiez les conditions d'utilisation.</div>
+<code>"Musique de trailer cinéma épique avec orchestre puissant, chœur dramatique, percussions tribales et montée de tension progressive, style Hans Zimmer/Two Steps From Hell, 90 secondes"</code>
+<div class="blog-tip">Conseil : indiquez "usage commercial" et vérifiez les conditions d'utilisation ElevenLabs avant diffusion publique.</div>
 </div>
 <div class="prompt-group">
-<h3>Ambiance mystérieuse</h3>
-<code>"Ambiance sonore inquiétante avec piano préparé, cordes frottées et bruits métalliques, pour scène de suspense ou horreur psychologique, tempo libre"</code>
+<h3>Ambiance mystérieuse / suspense</h3>
+<code>"Ambiance sonore inquiétante avec piano préparé, cordes frottées et bruits métalliques, pour scène de suspense psychologique, tempo libre, tension graduelle"</code>
 </div>
-<h2>3. Prompts Rap/Hip-Hop</h2>
+<div class="prompt-group">
+<h3>Bande-son de voyage / aventure</h3>
+<code>"Musique d'aventure cinématique avec sitar indien et percussions world, ambiance découverte et émerveillement, crescendo final, 2 minutes, sans voix"</code>
+</div>
+<div class="prompt-group">
+<h3>Score émotionnel pour court-métrage</h3>
+<code>"Orchestre de chambre intime avec violoncelle solo et piano, ambiance mélancolique et espoir mêlés, dynamique douce-forte, inspiration Max Richter, 3 minutes"</code>
+</div>
+
+<h2>3. Prompts Rap / Hip-Hop</h2>
 <div class="prompt-group">
 <h3>Beat trap moderne</h3>
 <code>"Instrumental trap avec 808 distordu, hi-hats en triplets, claps percutants et mélodie orientale au synthé, tempo 140 BPM, pour featuring rap"</code>
@@ -177,35 +211,66 @@
 <h3>Old school boom bap</h3>
 <code>"Beat hip-hop old school avec sample jazz, grosse caisse et caisse claire saturée, vibe années 90 New York, tempo 92 BPM"</code>
 </div>
-<h2>4. Techniques avancées</h2>
-<p>Pour des résultats encore plus précis :</p>
-<ul>
-<li><strong>Combinez styles</strong> : "Reggaeton avec éléments afrobeat et synthés futuristes"</li>
-<li><strong>Décrivez la structure</strong> : "Intro 8 mesures → couplet → refrain explosif"</li>
-<li><strong>Ajoutez des références</strong> : "Style entre Daft Punk et Kavinsky"</li>
-</ul>
-<div class="blog-comparison">
-<h3>Exemple : Prompt basique vs Optimisé</h3>
-<table>
-<tr>
-<th>Version</th>
-<th>Résultat</th>
-</tr>
-<tr>
-<td>"Musique triste"</td>
-<td>Générique, peu d'émotion</td>
-</tr>
-<tr>
-<td>"Ballade piano mélancolique avec cordes légères et pluie en fond, tempo 60 BPM, inspiration Ludovico Einaudi"</td>
-<td>Profondeur émotionnelle, qualité cinématique</td>
-</tr>
-</table>
+<div class="prompt-group">
+<h3>Drill UK sombre</h3>
+<code>"Beat drill UK avec ligne de basse glissante, piano mineur omineux, slides 808, hi-hats rapides, ambiance nocturne et froide, tempo 144 BPM"</code>
 </div>
+
+<h2>4. Prompts Lo-fi / Ambient / Concentration</h2>
+<div class="prompt-group">
+<h3>Lo-fi pour travailler</h3>
+<code>"Lo-fi hip-hop calme avec piano jazzy, crépitement de vinyle, légère pluie en fond, tempo 75 BPM, sans mélodie dominante, pour travailler ou étudier"</code>
+</div>
+<div class="prompt-group">
+<h3>Ambient relaxant</h3>
+<code>"Pad ambient aérien et lumineux avec bol tibétain, texture sonore évolutive sans mélodie définie, pour méditation ou sommeil, 10 minutes"</code>
+</div>
+<div class="prompt-group">
+<h3>Focus musique pour vidéo e-learning</h3>
+<code>"Fond musical neutre et concentré, cordes légères et piano minimaliste, pas de rythme marqué, sans élément distrayant, pour contenu éducatif"</code>
+</div>
+
+<h2>5. Prompts World Music / Styles ethniques</h2>
+<div class="prompt-group">
+<h3>Afrobeat festif</h3>
+<code>"Afrobeat festif avec guitare mélodique, percussions conga, basse grooving et cor de bugle, ambiance danse et célébration, tempo 115 BPM, style Fela Kuti meets Burna Boy"</code>
+</div>
+<div class="prompt-group">
+<h3>Flamenco moderne</h3>
+<code>"Fusion flamenco moderne avec guitare classique acoustique, palmas et cajon, touche électronique subtile, tempo libre avec accélérations, passion et intensité"</code>
+</div>
+
+<h2>6. Techniques avancées pour aller plus loin</h2>
+<ul>
+<li><strong>Combinez les styles</strong> : "Reggaeton avec éléments afrobeat et synthés futuristes" — les fusions créent des sons originaux difficiles à obtenir autrement.</li>
+<li><strong>Décrivez la structure</strong> : "Intro 8 mesures → couplet → refrain explosif → pont → outro fade-out" — ElevenMusic peut suivre une architecture musicale.</li>
+<li><strong>Ajoutez des références connues</strong> : "Style entre Daft Punk et Kavinsky" — les références artistiques précises orientent fortement le modèle.</li>
+<li><strong>Précisez les instruments par leur nom exact</strong> : "Rhodes electric piano" plutôt que "piano électrique", "Fender Stratocaster cleans" plutôt que "guitare électrique douce".</li>
+<li><strong>Nommez le mix</strong> : "Production bien mixée avec basses présentes et aigus clairs" guide le traitement sonore final.</li>
+</ul>
+
+<h2>Erreurs fréquentes à éviter</h2>
+<table class="blog-table">
+<tr><th>Erreur</th><th>Problème</th><th>Correction</th></tr>
+<tr><td>"Musique de fond"</td><td>Trop vague, résultat aléatoire</td><td>Précisez le genre et l'émotion</td></tr>
+<tr><td>Prompt de 3 mots</td><td>Résultat générique</td><td>Utilisez la formule complète</td></tr>
+<tr><td>Trop de styles mélangés</td><td>Résultat incohérent</td><td>Maximum 2-3 influences</td></tr>
+<tr><td>BPM extrêmes (>180 ou &lt;40)</td><td>Rendu instable</td><td>Restez entre 60 et 160 BPM</td></tr>
+<tr><td>Paroles en plusieurs langues</td><td>Mélange incohérent</td><td>Une seule langue par génération</td></tr>
+</table>
+
 <div class="blog-faq">
+<div class="faq-item"><button>Combien de mots doit contenir un bon prompt ElevenMusic ?</button>
+<div class="faq-content">Entre 20 et 60 mots est la zone optimale. En dessous de 10 mots, le résultat est trop vague. Au-delà de 80 mots, certains éléments peuvent être ignorés par le modèle. Concentrez-vous sur les éléments les plus importants.</div>
+</div>
+<div class="faq-item"><button>Peut-on utiliser le nom d'un artiste célèbre dans un prompt ?</button>
+<div class="faq-content">Oui, les références stylistiques ("style Daft Punk", "ambiance Hans Zimmer") sont autorisées et très efficaces. ElevenMusic n'imite pas la voix ou les œuvres exactes de l'artiste, mais s'en inspire sur le plan sonore.</div>
+</div>
 <div class="faq-item"><button>Comment accéder à cet article en anglais ?</button>
 <div class="faq-content">Utilisez le sélecteur de langue (EN/ES/DE) dans l'en-tête pour accéder à la version correspondante de cet article.</div>
 </div>
 </div>
+
 <div class="blog-cta">
 <p>Pour recevoir chaque semaine des prompts exclusifs :</p>
 <a class="cta-main" href="/#newsletter">S'abonner à la newsletter →</a>
@@ -213,8 +278,8 @@
 <div class="blog-case" style="margin-top:2em;">
 <h3>Autres ressources ElevenMusic</h3>
 <ul class="related-list">
-<li><a href="/blog-1">Tutoriel complet pour créer ta première musique IA</a></li>
-<li><a href="/blog">Tous les articles et guides ElevenMusic</a></li>
+<li><a href="/blog-1">Tutoriel complet : créer sa première musique IA avec ElevenMusic</a></li>
+<li><a href="/blog">Tous les guides ElevenMusic</a></li>
 </ul>
 </div>
 </div>
