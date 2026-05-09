@@ -130,83 +130,122 @@
 <article class="container">
 <div class="blog-header">
 <div class="blog-badge">Tutorial</div>
-<h1>Crea tu primera música con ElevenMusic (guía completa)</h1>
-<p class="blog-meta">Publicado el 15 de marzo de 2025 • Tiempo de lectura: 7 min</p>
+<h1>Crea tu primera musica con ElevenMusic IA (guia completa)</h1>
+<p class="blog-meta">Actualizado el 9 de mayo de 2026 · Tiempo de lectura: 10 min</p>
 </div>
 <div class="blog-content">
 <figure class="blog-hero">
-<picture><source srcset="../images/blog-1-hero.webp" type="image/webp"><img alt="Interfaz de ElevenMusic con música generada con IA" decoding="async" fetchpriority="high" height="630" src="../images/blog-1-hero.png" width="1200"/></picture>
-<figcaption>Interfaz intuitiva de ElevenMusic para crear música con IA</figcaption>
+<picture><source srcset="../images/blog-1-hero.webp" type="image/webp"><img alt="Interfaz de ElevenMusic generando musica con IA" decoding="async" fetchpriority="high" height="630" src="../images/blog-1-hero.png" width="1200"/></picture>
+<figcaption>La interfaz intuitiva de ElevenMusic para crear musicas con IA</figcaption>
 </figure>
-<p>ElevenMusic de ElevenLabs revoluciona la creación musical: cualquiera puede generar pistas originales en segundos. Esta guía paso a paso te muestra cómo crear tu primera composición, incluso sin conocimientos musicales.</p>
-<h2>Paso 1: Accede a ElevenMusic</h2>
-<p>Ve al <a href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="noopener sponsored noreferrer" target="_blank">sitio web oficial de ElevenMusic</a> e inicia sesión (o crea una cuenta). La versión gratuita ya permite probar el flujo completo.</p>
-<h2>Paso 2: Entender la interfaz</h2>
-<p>El estudio consta de 3 secciones principales:</p>
+
+<p>ElevenMusic de ElevenLabs revoluciona la creacion musical permitiendo a cualquier persona generar pistas originales en segundos. Sin necesidad de saber tocar un instrumento ni dominar un DAW: describes lo que quieres en texto y la IA compone por ti. Esta guia paso a paso te muestra como crear tu primera composicion de principio a fin.</p>
+
+<h2>Que es exactamente ElevenMusic?</h2>
+<p>ElevenMusic es el modulo de generacion musical de ElevenLabs, la misma empresa conocida por sus voces IA ultrarrealistas. Lanzado a finales de 2024, utiliza un modelo de difusion de audio entrenado con una biblioteca musical con licencia para crear piezas originales a partir de un simple prompt de texto.</p>
+<p>Lo que lo diferencia de Suno o Udio:</p>
 <ul>
-<li><strong>Prompt musical</strong>: describe tu música</li>
-<li><strong>Ajustes avanzados</strong>: Estilo, BPM, instrumentos</li>
-<li><strong>Previsualización</strong>: escucha y ajusta</li>
+<li><strong>Integracion nativa</strong> dentro del ecosistema ElevenLabs — una sola cuenta para voz Y musica.</li>
+<li><strong>Acuerdos con titulares de derechos</strong> (Merlin, Kobalt) para reducir el riesgo de reclamaciones comerciales.</li>
+<li><strong>API disponible</strong> para integrar la generacion musical en tus propias aplicaciones.</li>
+<li><strong>Plan gratuito funcional</strong>: 10 generaciones/mes sin tarjeta de credito.</li>
 </ul>
+
+<h2>Paso 1: Acceder a ElevenMusic y crear una cuenta</h2>
+<p>Visita <a href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="noopener sponsored noreferrer" target="_blank">el sitio oficial de ElevenMusic</a> y crea una cuenta gratuita. El registro tarda menos de 2 minutos con un correo electronico o cuenta de Google. El plan Free incluye 10 generaciones por mes, suficiente para explorar la herramienta.</p>
 <div class="blog-tip">
-<strong>Consejo pro</strong>: Empieza con prompts simples como "música pop energética" antes de experimentar con descripciones complejas.
-        </div>
-<h2>Paso 3: Tu primer prompt</h2>
-<p>Prueba este prompt para empezar:</p>
+<strong>Consejo</strong>: Si ya tienes una cuenta ElevenLabs para voces IA, te da acceso directo a ElevenMusic — no necesitas registrarte de nuevo.
+</div>
+
+<h2>Paso 2: Entender la interfaz en 3 minutos</h2>
+<p>El estudio ElevenMusic se divide en 3 zonas principales:</p>
+<ul>
+<li><strong>Zona de prompt</strong>: el campo de texto donde describes tu musica.</li>
+<li><strong>Configuracion avanzada</strong>: duracion, estilo musical, instrumentos sugeridos, tempo (BPM), mood.</li>
+<li><strong>Reproductor e historial</strong>: tus generaciones se guardan automaticamente.</li>
+</ul>
+
+<h2>Paso 3: Escribir un buen prompt musical</h2>
+<p>La calidad del prompt es el factor numero 1 del resultado. Un prompt vago produce musica generica; un prompt preciso produce exactamente lo que imaginas. Aqui esta la estructura que funciona:</p>
 <div class="code-block">
-<code>"An energetic electro pop music with bright synths and catchy melody, tempo 120 BPM, no lyrics"</code>
+<code>[Genero] + [Instrumentos] + [Ambiente/Mood] + [Tempo] + [Uso] + [Duracion opcional]</code>
 <button class="copy-code">Copiar</button>
 </div>
-<h2>Paso 4: Personalización avanzada</h2>
-<p>Explore las opciones:</p>
 <table class="blog-table">
-<tr>
-<th>Parámetro</th>
-<th>Valores recomendados</th>
-</tr>
-<tr>
-<td>Duración</td>
-<td>30s para probar, 2-3 min para una pista completa</td>
-</tr>
-<tr>
-<td>Estilo</td>
-<td>Pop, Electro, Cinematic, Lo-fi...</td>
-</tr>
-<tr>
-<td>Instrumentos</td>
-<td>Synth, Piano, Guitarra, Batería...</td>
-</tr>
+<tr><th>Uso</th><th>Ejemplo de prompt</th></tr>
+<tr><td>Intro YouTube</td><td>"Intro electro dinamica con sintetizadores brillantes y beat contundente, 10 segundos, estilo cyberpunk, sin voces"</td></tr>
+<tr><td>Fondo de podcast</td><td>"Musica de ambiente lo-fi tranquila con piano y lluvia suave de fondo, 3 minutos, sin melodia dominante"</td></tr>
+<tr><td>Banda sonora cinematografica</td><td>"Orquesta epica con cuerdas y percusion tribal, ambiente de aventura fantastica, 90 segundos"</td></tr>
+<tr><td>Contenido para redes sociales</td><td>"Pop energetico con voz femenina IA, estribillos pegadizos, 128 BPM, estilo viral TikTok"</td></tr>
+<tr><td>E-learning</td><td>"Musica de fondo neutra y concentrada, piano minimalista, sin ritmo marcado, para trabajar"</td></tr>
 </table>
-<h2>Paso 5: Generación y exportación</h2>
-<p>Haz clic en "Generar" (tarda 15-45 segundos). Cuando estés satisfecho:</p>
+
+<h2>Paso 4: Los parametros avanzados que marcan la diferencia</h2>
+<table class="blog-table">
+<tr><th>Parametro</th><th>Valores recomendados</th><th>Impacto</th></tr>
+<tr><td>Duracion</td><td>30 s para probar, 2-3 min para una pista completa</td><td>Coste en creditos</td></tr>
+<tr><td>Estilo</td><td>Pop, Electro, Cinematografico, Lo-fi, Jazz...</td><td>Genero global</td></tr>
+<tr><td>Instrumentos</td><td>Nombralos explicitamente en el prompt</td><td>Precision sonora</td></tr>
+<tr><td>BPM</td><td>60-80 para ambiente, 120-140 para energia</td><td>Ritmo percibido</td></tr>
+<tr><td>Mood</td><td>Alegre, melancolico, epico, misterioso...</td><td>Emocion transmitida</td></tr>
+</table>
+
+<h2>Paso 5: Generar, escuchar e iterar</h2>
+<p>Haz clic en "Generar" — la generacion tarda entre 15 y 45 segundos. Si el resultado no te convence completamente:</p>
 <ol>
-<li>Descargar el archivo .mp3 o .wav</li>
-<li>Compartir el enlace directamente</li>
-<li>Integrarlo en tus proyectos de vídeo</li>
+<li><strong>Regenera</strong> con el mismo prompt: cada generacion es unica.</li>
+<li><strong>Anade detalles</strong>: si el ritmo es demasiado lento, anade "tempo 130 BPM".</li>
+<li><strong>Segmenta</strong> para pistas largas: genera intro, estrofa y estribillo por separado.</li>
 </ol>
+
+<h2>Paso 6: Exportar y usar tu musica</h2>
+<ul>
+<li><strong>Descarga MP3 o WAV</strong>: disponible en todos los planes, incluido el gratuito.</li>
+<li><strong>Enlace de comparticion directa</strong>: para enviar una vista previa a un cliente.</li>
+<li><strong>Integracion API</strong>: para desarrolladores que deseen automatizar la generacion musical.</li>
+</ul>
+<p>Para uso comercial (YouTube monetizado, publicidad, streaming), verifica las condiciones de tu plan ElevenLabs. Los planes Creator y superiores incluyen derechos comerciales completos.</p>
+
 <div class="blog-case">
-<h3>Caso práctico: Música para YouTube</h3>
-<p>Para una potente introducción de YouTube:</p>
-<code>"Short dynamic intro with powerful beats and futuristic sound effects, 10 seconds, cyberpunk style"</code>
-<p>Resultado instantáneo, libre de royalties para tu canal.</p>
+<h3>Ejemplo completo: Musica para un video de YouTube de viajes</h3>
+<p>Objetivo: una banda sonora cinematografica de 2 minutos para un montaje de viaje por el Sudeste Asiatico.</p>
+<code>"Musica cinematografica epica con sitar indio y percusion asiatica, atmosfera de aventura y descubrimiento, crescendo progresivo, 2 minutos, sin voces"</code>
+<p>Resultado generado en 30 segundos. Utilizable directamente en YouTube con riesgo de reclamacion reducido (segun condiciones ElevenLabs).</p>
 </div>
-<h2>FAQ (creación)</h2>
+
+<h2>Planes y precios de ElevenMusic (2026)</h2>
+<table class="blog-table">
+<tr><th>Plan</th><th>Precio</th><th>Generaciones/mes</th><th>Derechos comerciales</th></tr>
+<tr><td>Free</td><td>0 EUR</td><td>10</td><td>Uso personal unicamente</td></tr>
+<tr><td>Starter</td><td>~5 EUR/mes</td><td>30</td><td>Personal + proyectos limitados</td></tr>
+<tr><td>Creator</td><td>~22 EUR/mes</td><td>100</td><td>Comerciales completos incluidos</td></tr>
+<tr><td>Pro</td><td>~99 EUR/mes</td><td>500</td><td>Comerciales completos + API</td></tr>
+</table>
+
+<h2>FAQ de Creacion</h2>
 <div class="blog-faq">
-<div class="faq-item"><button>¿Puedo generar múltiples versiones?</button>
-<div class="faq-content">Sí, cada generación crea una variación única. Prueba con "Variation 1", "Slower version", etc.</div>
+<div class="faq-item"><button>Puedo generar varias versiones del mismo prompt?</button>
+<div class="faq-content">Si, cada clic en "Generar" crea una variacion unica incluso con un prompt identico. Prueba anadiendo "Variacion 1" o "Version mas lenta" para orientar la variacion.</div>
 </div>
-<div class="faq-item"><button>¿Cómo conseguir un resultado más profesional?</button>
-<div class="faq-content">Especifique los instrumentos ("Piano eléctrico Rhodes"), la atmósfera ("noche urbana rara") y las referencias ("estilo Punk").</div>
+<div class="faq-item"><button>Como obtengo un resultado mas profesional?</button>
+<div class="faq-content">Especifica los instrumentos ("piano electrico Rhodes"), el ambiente ("noche urbana lluviosa") y referencias estilisticas ("estilo Daft Punk"). Cuanto mas preciso sea el prompt, mas controlado sera el resultado.</div>
+</div>
+<div class="faq-item"><button>La musica generada esta libre de derechos?</button>
+<div class="faq-content">ElevenLabs tiene acuerdos con titulares de derechos (Merlin, Kobalt) para reducir el riesgo de reclamaciones. Verifica las condiciones de tu plan antes de monetizar.</div>
+</div>
+<div class="faq-item"><button>Se puede generar musica con voces cantadas?</button>
+<div class="faq-content">Si, ElevenMusic admite la generacion con voz cantada IA. Especifica "con voces cantadas en espanol" o "female AI vocals" en tu prompt.</div>
 </div>
 </div>
+
 <div class="blog-cta">
-<p>¿Listo para crear? <a class="cta-main" href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="noopener sponsored noreferrer" target="_blank">Prueba ElevenMusic gratis →</a></p>
+<p>Listo para crear? <a class="cta-main" href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="noopener sponsored noreferrer" target="_blank">Prueba ElevenMusic gratis</a></p>
 </div>
 <div class="blog-case" style="margin-top:2em;">
-<h3>Sigue explorando ElevenMusic</h3>
+<h3>Continua explorando ElevenMusic</h3>
 <ul class="related-list">
-<li><a href="/es/blog-2">Los mejores prompts de ElevenMusic para conseguir canciones únicas</a></li>
-<li><a href="/es/blog">Todas las guías de ElevenMusic (blog)</a></li>
+<li><a href="/es/blog-2">Los mejores prompts ElevenMusic para crear pistas unicas</a></li>
+<li><a href="/es/blog">Todas las guias ElevenMusic</a></li>
 </ul>
 </div>
 </div>
